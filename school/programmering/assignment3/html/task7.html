@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    </title></title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <script src="../script/script.js"></script>
+
+    </head>
+
+<body>
+
+    <main>
+
+        <a href="../index.html" class="btn">Home</a>
+
+        <article>
+
+         <center> <h1>Task 7- Updated plan</h1> </center>
+
+        <div class="divTasks">
+
+            <p class="info">
+            The finished program opearates close to what i imagined when i started, but it was nessesary to do some changes to the script. Task 2 and 3
+            turned out to be the i planned it to be. This is probalby because we have spent some time with this method og reading and storing file data in 
+            lectures. When it comes to task 4, it turned out to be different from what i had in mind. I planned to run the calculating functions at a button onclick
+            but that turned out to be inefficient, because there where alot of functions that did the different calculations. I ended up with a "main" function 
+            that handles all of the HTML-printing and function- calls.
+
+            </p>
+
+            <p class="info">
+            In my original plan i also said that the fucntions used to calculate the statistics sholud take the stat it where to calculate as a parameter, but
+            this is of course a little bit off, and i ended up giving the functions the array, and a number, representing which
+            column the data is on, parameters instead. This way i can calculate the same thing with a different set of data. To access the specific
+            column i am looping over the 2D array, and pushing each element into a new array, in this way i can do calculations on this one-dimensional array
+            instead. 
+            </p>
+
+            <p class="info">
+            It is also worth mentioning that i had to define a new set of functions that where used when i calculated the stats for each of the different
+            locations and transaction types. This is because, in order to do calculations i chose to push each amount for "Oslo" each amount "Halden" etc into
+            a new, one-dimensional array. The initial functions does the calculations based on that the array is multidimensional, so these could not be used.
+            </p>
+
+            <p class="info">
+            Task 5 and 6 turned out somewhere what i imagined. I did not know how to fill each cell with data, and decided to use arrays. I stored all the variables
+            that hold the total amounts in one array, and similar with the rest of the statistics. I got into a serious amount of trouble when i was trying to create each
+            of the columns. I wanted an empty cell in the top- left corner, so that the table would look presentable. Therefor i added an empty spot in the first array 
+            i was to print. This made the first array one element larger than rest of the arrays. This caused me to always get an undefined column at the end. 
+            After alot of questioning, i didnt seem to find a way around it. So i decided to print the first row in the html-file, this way i could get it to work.
+            </p>
+
+            <p class="info">
+            I also would have hoped my answer to the bonus tasks where more dynamical, and would have worked on different data-files. The way i have solved it now
+            the bonus-calculations will only work with this data file. The statistics table will also just work for this data file, because of the bonus tasks. 
+            Other than this, the program operates how i planned it to.
+            </p>
+
+           </div>
+
+  
+           
+
+        </article>
+
+
+
+
+
+    </main>
+
+  
+
+    
+</body>
+</html>

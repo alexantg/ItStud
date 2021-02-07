@@ -1,0 +1,73 @@
+
+    header{
+    top: 20;
+    text-align: center;
+    margin: 0 auto;
+        }
+
+
+    body{
+    text-align: center;
+        }
+   
+
+ .button{
+ background-color:black;
+ color: white;
+ padding: 5px 10px;
+ text-align: center;
+ font-size: 15px;
+ border-radius: 10px;
+ text-decoration: none;
+ margin-top: 20px;
+            }
+        
+
+    p{
+    font-size: 150%;
+    }
+
+   
+
+    select{
+    margin-top: 2%;
+    font-size: 120%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    }
+
+    h2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 300%;
+    }
+
+  
+
+    footer{
+        margin-top: 10%;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row  ;
+    }
+
+    span{
+        font-size: 150%;
+    }
+    
+
+    div{
+        margin: 0 auto; 
+        margin-top: 5%;
+        border: 2px solid lightgrey;
+        text-align: center;
+        padding: 2%;
+        max-width: 30%;
+        max-height: 10%;
+        font-family: 'Robot mono', monospace;
+    }
+    
+
+
+    

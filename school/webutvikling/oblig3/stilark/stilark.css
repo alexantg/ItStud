@@ -1,0 +1,463 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+@media screen and (min-width: 900px){
+
+	body {
+		font-family: 'Domine', serif;
+		background-color: white;
+	}
+	
+	nav ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	nav ul>li {
+		/*setter menyen til hundre% bredde, sentrerer teksten og setter bakgrunnsfarge*/
+		text-align: center;
+		margin-bottom: -1;
+		background-color: white;
+		flex: auto;
+	}
+	
+	nav ul>li>a {
+		/*settr egenskaper til meny-blokkene*/
+		display: block;
+		padding: 0.7em;
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+	}
+	
+	nav ul>li:hover {
+		/*setter egenskaper til menyblokkene, og tekst-dekorasjon*/
+	
+		background-color: #fe6d00;
+		
+	}
+	
+	h2 {
+		/*setter størrelse, farge og font-style på h2*/
+		font-size: 2.5rem;
+		padding: 2.0rem;
+		font-family: 'Domine', serif;
+		color: white;
+	}
+	
+	h3 {
+		margin-top: 3rem;
+	}
+	
+	header {
+		/*anngir hvilket grid-område header skal ligge i, og legger til bakgrunnsbilde*/
+		width: 100%;
+		grid-area: header;
+		text-align: center;
+		background-image: url('../bilder/bk5.jpg');
+		background-attachment: fixed;
+		top: 0;
+		position: sticky;
+	}
+	
+	main {
+		/*setter main til å fylle grid-område*/
+		grid-area: main
+	}
+	
+	aside {
+		/*setter aside til å fylle grid-område*/
+		grid-area: aside;
+	}
+	
+	footer {
+		/*sentrerer footer, setter grid-området, og legger til padding på footer*/
+		text-align: center;
+		grid-area: footer;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+	
+	div {
+		/*sentrerer tekst i div, og legger på margin over og under*/
+		text-align: center;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+	
+	a {
+		/*endrer stil på linkene på forsiden*/
+		text-decoration: none;
+		color: blue;
+	}
+	
+	input {
+		/*legger til margin på input-felter*/
+		margin: 20rem;
+	}
+	
+	select {
+		/*legger til margin på select-bokser*/
+		margin: 2rem;
+	}
+	
+	figure {
+		/*legger til margins, og uthever skriften i figure-taggen*/
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		font-weight: bold;
+	}
+	
+	.btn {
+		/*anngir egenskaper for knapper*/
+		background-color: orangered;
+		color: white;
+		padding: 5px 10px;
+		text-align: center;
+		display: inline-block;
+		font-size: 1.3em;
+		border-radius: 1em;
+		padding-top: 0.3em;
+		text-decoration: none;
+		margin-top: 3em;
+	}
+	
+	.container {
+		/*setter egenskaper for containeren av artikler på forsiden/ lager en flexbox layout*/
+		width: 40em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-height: 100%;
+	}
+	
+	.container p {
+		/*setter bredde, margins og lar teksten flyte til venstre i p-taggene på artikkelfremvisning (forside)*/
+		width: 35em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		margin-left: 4em;
+		text-align: left;
+	}
+	
+	.container div {
+		/*sentrerer divene (artikkelfremvisningen) i flexbox-layouten*/
+		justify-self: center;
+	}
+	
+	.wrapper {
+		/*Ytterse wrapper for grid layout*/
+		background-color: white;
+		margin: 0 auto;
+		overflow: visible;
+		width: 100%;
+		display: grid;
+		/*displayer elementer i wrapper etter grid-prinsipp*/
+		justify-items: center;
+		grid-gap: 2em;
+		grid-template-areas: /*forhåndsdefinerer områder i rutenettet, slik at disse kan fylles videre*/
+		" header header " "nav nav " " main aside " " footer footer";
+	}
+	
+	.bildeForside {
+		/*setter bredden på bilder i artikler på forisden*/
+		width: 7em;
+	}
+	
+	.bildeArtikkel {
+		/*setter bredde og høyde på bilder i artikkelsidene*/
+		width: 29rem;
+		height: 14rem;
+	}
+	
+	.wrapperArtikkel {
+		/*wrapper for grid-layout på artikkelsidene*/
+		background-color: white;
+		margin: 0 auto;
+		/*sentrerer elementene på siden*/
+		display: grid;
+		/*sier at elementer skal vises etter grid layout*/
+		grid-gap: 2em;
+		width: 100%;
+		height: auto;
+		justify-items: center;
+		grid-template-areas: /*forhåndsdefinerer områder i rutenettet, slik at disse kan fylles videre*/
+		"header header" "main main" "footer footer";
+	}
+	
+	.dato {
+		/*setter margins, fontstørrelse og uthever skriften for dato i artiklene*/
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	
+	.wrapperArtikkel main {
+		/*sentrerer main-taggen på artikkelsidene og setter bredde*/
+		margin: 0 auto;
+		width: 40rem;
+	}
+	
+	.info {
+		/*lar teksten flyte mot venstre og legger til padding i p-taggene i artiklene*/
+		text-align: left;
+		padding-top: 1rem;
+	}
+	
+	.wrapperArtikkel h1 {
+		/*setter størrelsen på artikkel-overskriftene*/
+		font-size: 2.5em;
+	}
+	
+	.skjema {
+		/*setter margin, og sentrerer teksten i HTML-skjema (eksempelet på artikkelsiden) */
+		margin-top: 3em;
+		text-align: center;
+	}
+	
+	.kilder {
+		/* legger til en margin-top på kilde seksjonen i artikkelsidene*/
+		margin-top: 1rem;
+	}
+	
+	#klokkeutskrift {
+		color: white;
+	}
+}
+
+
+@media screen and (max-width: 900px){
+	body {
+		font-family: 'Domine', serif;
+		background-color:white;
+	}
+	
+	nav ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	
+	nav ul>li {
+		/*setter menyen til hundre% bredde, sentrerer teksten og setter bakgrunnsfarge*/
+		text-align: center;
+		margin-bottom: -1;
+		background-color: white;
+		flex: auto;
+	}
+	
+	nav ul>li>a {
+		/*settr egenskaper til meny-blokkene*/
+		display: block;
+		padding: 0.7em;
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+	}
+	
+	nav ul>li:hover {
+		/*setter egenskaper til menyblokkene, og tekst-dekorasjon*/
+		z-index: 1;
+		background-color: #fe6d00;
+		
+	}
+	
+	h2 {
+		/*setter størrelse, farge og font-style på h2*/
+		font-size: 2.5rem;
+		padding: 2.0rem;
+		font-family: 'Domine', serif;
+		color: white;
+	}
+	
+	h3 {
+		margin-top: 3rem;
+	}
+	
+	header {
+		/*anngir hvilket grid-område header skal ligge i, og legger til bakgrunnsbilde*/
+		width: 100%;
+		grid-area: header;
+		text-align: center;
+		background-image: url('../bilder/bk5.jpg');
+		background-attachment: fixed;
+		
+	}
+	
+	main {
+		/*setter main til å fylle grid-område*/
+		grid-area: main
+	}
+	
+	aside {
+		/*setter aside til å fylle grid-område*/
+		grid-area: aside;
+	}
+	
+	footer {
+		/*sentrerer footer, setter grid-området, og legger til padding på footer*/
+		text-align: center;
+		grid-area: footer;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+	
+	div {
+		/*sentrerer tekst i div, og legger på margin over og under*/
+		text-align: center;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+	
+	a {
+		/*endrer stil på linkene på forsiden*/
+		text-decoration: none;
+		color: blue;
+	}
+	
+	input {
+		/*legger til margin på input-felter*/
+		margin: 20rem;
+	}
+	
+	select {
+		/*legger til margin på select-bokser*/
+		margin: 2rem;
+	}
+	
+	figure {
+		/*legger til margins, og uthever skriften i figure-taggen*/
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		font-weight: bold;
+	}
+	
+	.btn {
+		/*anngir egenskaper for knapper*/
+		background-color: orangered;
+		color: white;
+		padding: 5px 10px;
+		text-align: center;
+		display: inline-block;
+		font-size: 1.3em;
+		border-radius: 1em;
+		padding-top: 0.3em;
+		text-decoration: none;
+		margin-top: 3em;
+	}
+	
+	.container {
+		/*setter egenskaper for containeren av artikler på forsiden/ lager en flexbox layout*/
+		width: 20em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-height: 100%;
+	}
+	
+	.container p {
+		/*setter bredde, margins og lar teksten flyte til venstre i p-taggene på artikkelfremvisning (forside)*/
+		width: 20em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	
+	.container div {
+		/*sentrerer divene (artikkelfremvisningen) i flexbox-layouten*/
+		justify-self: center;
+	}
+	
+	.wrapper {
+		/*Ytterse wrapper for grid layout*/
+		background-color: white;
+		margin: 0 auto;
+		overflow: visible;
+		width: 100%;
+		display: grid;
+		/*displayer elementer i wrapper etter grid-prinsipp*/
+		justify-items: center;
+		grid-gap: 2em;
+		grid-template-areas: /*forhåndsdefinerer områder i rutenettet, slik at disse kan fylles videre*/
+		" header header " "nav nav " " main main " "aside aside" " footer footer";
+	}
+	
+	.bildeForside {
+		/*setter bredden på bilder i artikler på forisden*/
+		width: 7em;
+	}
+	
+	.bildeArtikkel {
+		/*setter bredde og høyde på bilder i artikkelsidene*/
+		width: 29rem;
+		height: 14rem;
+	}
+	
+	.wrapperArtikkel {
+		/*wrapper for grid-layout på artikkelsidene*/
+		background-color: white;
+		margin: 0 auto;
+		/*sentrerer elementene på siden*/
+		display: grid;
+		/*sier at elementer skal vises etter grid layout*/
+		grid-gap: 2em;
+		width: 100%;
+		height: auto;
+		justify-items: center;
+		grid-template-areas: /*forhåndsdefinerer områder i rutenettet, slik at disse kan fylles videre*/
+		"header header" "main main" "footer footer";
+	}
+	
+	.dato {
+		/*setter margins, fontstørrelse og uthever skriften for dato i artiklene*/
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	
+	.wrapperArtikkel main {
+		/*sentrerer main-taggen på artikkelsidene og setter bredde*/
+		margin: 0 auto;
+		width: 20rem;
+	}
+	
+	.info {
+		/*lar teksten flyte mot venstre og legger til padding i p-taggene i artiklene*/
+		text-align: left;
+		padding-top: 1rem;
+	}
+	
+	.wrapperArtikkel h1 {
+		/*setter størrelsen på artikkel-overskriftene*/
+		font-size: 2.5em;
+	}
+	
+	.skjema {
+		/*setter margin, og sentrerer teksten i HTML-skjema (eksempelet på artikkelsiden) */
+		margin-top: 3em;
+		text-align: center;
+	}
+	
+	.kilder {
+		/* legger til en margin-top på kilde seksjonen i artikkelsidene*/
+		margin-top: 1rem;
+	}
+	
+	#klokkeutskrift {
+		display: none;
+	}
+}
+
+
+
+

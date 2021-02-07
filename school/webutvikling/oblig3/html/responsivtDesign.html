@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mediatyper</title>
+    <link rel="stylesheet" type="text/css" href="../stilark/stilark.css">
+    <!--Linker til stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <!--Google font-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/normalize.css">
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css">
+    <!--Linker til print stilark-->
+    <script src="../script/print.js"> </script>
+    <!--Linker til scriptet på siden-->
+
+</head>
+
+
+<body>
+
+    <div class="wrapperArtikkel">
+
+        <header>
+
+            <h2>Ressursside webutvikling</h2>
+            <!--Setter overskrift i headeren-->
+
+            <nav id="menyen">
+                <ul>
+                    <!--Lager en meny i headeren-->
+
+                    <li><a href="../index.html">Hjem</a> </li>
+                    <li><a href="../html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li><a href="../html/medietyper.html">Mediatyper</a> </li>
+                    <li><a href="../html/csslayouts.html">CSS layouts</a> </li>
+                    <li><a href="../html/video_audio.html">Video & Audio</a> </li>
+                    <li><a href="../html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li><a href="../html/sass_css.html">SASS</a> </li>
+
+
+
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+
+
+        <main>
+
+            <article>
+                <!--Angir artikkelen hvor hovedtekst er-->
+
+       
+                <h1>Responsivt design</h1>
+
+                <p class="dato">22.10.2019</p>
+                <!--Setter dato i artikkelen-->
+
+
+                <p class="info">
+                    Denne artikkelen skal ta for seg responsivt design. Den vil beskrive løsninger på responsivt design, noen utfordringer
+                    samt problemer som kan forekomme. Denne siden bruker responsive størrelser, grid-layout samt media queries for å oppnå responsivitet
+                    og kan bli brukt som et eksempel
+                </p>
+
+                <p class="info">
+                    Responsivt design er at HTML-strukturen tilpasser seg skjermen den vises på. Det vil si at siden er like lesbar på mobil og nettbrett,
+                    som for eksempel PC. Responsive sider har også verdi for søkemotoroptimalisering, det vil si at sider som er responsive blir prioritert. 
+                    På mobile enheter er det ofte hensiktsmessig å presentere innholdet på en kolonne. Et eksempel på dette kan være mobilversjonen av forsiden på
+                    denne nettsiden, der både hovedinnholdet og "sidekolonnen" ligger under hverandre for å skape lesbarhet.
+                </p>
+
+                <p class="info">
+                    En viktig del av det å oppnå responsivt design er å unngå hardkodede font-størrelser. Det er viktig at disse kan tilpasse seg siden innholdet skal vises
+                    på. Å anngi størrelser i "%" og "px" er lite responsivt, da det vil være forskjellig fra skjerm til skjerm hva som for eksempel er 50% og liknende.
+                    Rem, og Em er derimot beregnet for å være godt responsive font-størrelser. Disse forholder seg til font-størrelsen på elementet, slik at den
+                    alltid blir beregnet på samme måte, uavhengig av hvilken skjerm innholder vises på. Andre gode måter å anngi størrelser på med tanke på responsivitet
+                    er å bruke viewport-height og viewport-width. Disse svarer alltid til en prosent av viewporten, noe som gjør det responsivt.
+                </p>
+
+                <p class="info">
+                    Videre er det hensiktsmessig å bruke media queries for å oppnå resonsivitet. Da anngir vi, med CSS at et sett med regler skal gjelde for for eksempel
+                    en spesifikk skjermbredde. Vil vi at for eksempel alt innhold skal vises i en kolonne på mobil-skjermer kan vi endre layouten i CSS for skjermbredder under
+                    for eksempel 900px. Media queries kan spesifiseres enten i HTML-taggen, eller i stilarket. Det er også vanlig å kombinere media queries med medietyper 
+                    som er det er skrevet en artikkel om (se meny ovenfor). Vi kan også spesifisere om CSS-reglene skal gjelde ikke bare for ulike skjermbredder, men også
+                    om skjermen er liggende eller stående orientert. Dette kan også kombineres med skjermbredde-spesifisering.  
+                </p>
+
+                <p class="info">
+                    Gå til forsidens sidekolonne for å lese mer om responsivt webdesign: <br>
+                    <a class="btn" href="../index.html">Forside</a>
+                </p>
+
+
+         
+                <h3>Kilder</h3>
+                <p class="kilder">
+                    - Duckett, J. (2011). HTML & CSS Design and build Websites. John Willey & Sons, inc. <br>
+                    - Tom Heine Nätt, E. M. (2017). Webutvikling. Gyldendal. <br>
+                    -Forelesningsnotater
+                    
+                </p>
+
+                <button class="btn" id="print">Skriv ut</button>
+
+
+            </article>
+        </main>
+
+
+
+        <footer id="footer">
+            <!--Footereren på nettsiden med kontaktinfo-->
+            2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a> <br>
+
+        </footer>
+
+
+    </div>
+
+
+
+</body>
+

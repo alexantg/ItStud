@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Microdata- Arrangement</title>
+    <!--Linker til stilark-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../stilark/microdata.css">
+    <meta name="google-site-verification" content="bsQJIWN_8yqKGE0mWBA-WDNyK186vwG4JWGGhwSQxME" />
+    
+ 
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+
+        
+            <article itemscope="itemscope" itemtype="https://schema.org/Event">
+
+                <h1 itemprop="name">Fotballkamp</h1>
+
+                <img itemprop="image" src="../bilder/arrangement_eksempel.jpg" width="200">
+
+              <p>Start: <time datetime="2019-11-10T17:00" itemprop="startDate">17.00</time></p> 
+              <p>Slutt :<time datetime="2019-11-10T20:00" itemprop="endDate">20.00</time></p> 
+
+              <p itemprop="location" itemscope="itemscope" itemtype="https://schema.org/PostalAddress">
+
+             Adressen er: 
+             <span itemprop="name">Fotballbanen</span>
+              <span itemprop="streetAddress"> BRAveien 4</span>
+              <span itemprop="postalCode"> 1757</span>
+              <span itemprop="addressLocality"> Halden</span>
+
+             </p>
+              
+
+            </article>
+
+    
+        </section>
+
+
+    </main>
+
+
+
+</body>
+
+</html>

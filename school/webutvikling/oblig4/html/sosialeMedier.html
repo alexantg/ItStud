@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+
+      <!--Implementasjon: Twitter (cards)-->
+
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:title" content="Sosiale medier"/>
+      <meta name="twitter:description" content="Få mer informasjon om Sosiale medier, og hvordan disse fungerer med nettsider"/>
+      <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2014/03/22/22/17/twitter-292994_640.jpg">
+  
+  
+      <!--Implementasjon: Facebook / open graph-->
+  
+      <meta name="og:url" content="https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/sosialeMedier.html"/>
+      <meta name="og:type" content="article"/>
+      <meta name="og:title" content="Sosiale medier" />
+      <meta name="og:description" content="Få mer informasjon om Sosiale medier, og hvordan disse fungerer med nettsider"/>
+      <meta name="og:image" content="https://cdn.pixabay.com/photo/2014/03/22/22/17/twitter-292994_640.jpg">
+
+
+
+    <meta charset="UTF-8">
+    <title>Sosiale medier</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../stilark/stilark.css">
+    <meta name="google-site-verification" content="bsQJIWN_8yqKGE0mWBA-WDNyK186vwG4JWGGhwSQxME" />
+
+    <!--Linker til stilark-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/normalize.css">
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css">
+    <!--Linker til print stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <script src="../script/print.js">
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapperArtikkel">
+
+        <header>
+            <nav id="menyen">
+
+                
+                <h2>Ressursside webutvikling</h2>
+                <!--Setter overskrift i headeren-->
+                
+                <ul>
+                    <!--Lager en meny i headeren-->
+
+                    <li><a href="../index.html">Hjem</a> </li>
+                    <li><a href="../html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li><a href="../html/medietyper.html">Mediatyper</a> </li>
+                    <li><a href="../html/csslayouts.html">CSS layouts</a> </li>
+                    <li><a href="../html/video_audio.html">Video & Audio</a> </li>
+                    <li><a href="../html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li><a href="../html/sass_css.html">SASS</a> </li>
+                    <li><a href="../html/seo.html">SEO</a> </li>
+                    <li><a href="../html/tilgjengelighet.html">Universiell utforming</a> </li>
+                    <li><a href="../html/sosialeMedier.html">Sosiale medier</a> </li>
+                    <li><a href="../html/microdata.html">Microdata</a> </li>
+
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+
+        <main>
+
+            <article>
+                <!--Angir artikkelen hvor hovedtekst er-->
+
+                <h1>Sosiale medier</h1>
+
+                <p class="dato">01.11.2019</p>
+                <!--Setter dato i artikkelen-->
+
+                <p class="info">
+
+                    Denne artikkelen handler om teknisk implementasjon av sosiale medier på andre nettsider. Gjennom open graph( et sett med regler)
+                    kan man integrere egne nettsider inn i sosiale medier. Dermed får man et nettverk i nettverk. Open graph sine sett med meta-data, 
+                    forteller sosiale medier hva som skal vises når siden blir nevnt eller delt i sosiale medier. Hvis man ikke har med disse taggene
+                    er det en mulighet for at for eksempel bildet for nettstedet er et annet enn det du vil det skal være. 
+
+                </p>
+
+                <p class="info">
+                    <strong>Teknisk implementasjon</strong>
+                    <br>
+
+                    For å gjøre klar nettstedet for bruk med sosiale medier, velger jeg og inkludere et sett med open-graph regler. Altså ulike meta-tagger
+                    som forteller hvordan nettsiden skal se ut ved for eksempel deling på sosiale medier. (som nevnt ovenfor). Jeg skal implementere disse taggene
+                    på <a href="../index.html">forsiden</a>, og <a href="../html/sosialeMedier.html">denne siden</a>
+                    </p>
+
+                    <p class="info">
+                        <strong>Twitter</strong>
+                        <br>
+                        Twitter har sine egne "versjoner" for open graph-meta taggene. Disse kalles twitter-cards og er spesifikt for twitter. 
+                        Et eksempel på en slik tag kan være: <code> &lt;meta name= "twitter:card" content="summary" &gt; </code> Dette vil bety
+                        at det man anngir videre vil vises som et kort ved deling av URL-en. Som vises på bildet under, er det mange flere deler
+                        av disse twitter-kortene man kan anngi informasjon for. For eksempel har man <code> name="twitter: title"</code> som anngir
+                        tittelen på "kortet" som deles. 
+                    </p>
+
+                    <p class="info">
+                        <strong>Facebook</strong>
+                        Facebook har ingen egen vri på open-graph meta-taggene, og bruker de vanlige open-graph regelene. Et eksempel på en slik tag
+                        vil da være <code> &lt; meta name="og; title" content="Ressursside webutvikling" &gt; </code>. Her sier man at tittelen på seksjonen
+                        som inneholder informasjonen om nettstedet skal være "Ressursside webutvikling". Som vist på bildet nedenfor, har man også en rekke 
+                        andre name-atributter som forteller hvordan seksjonen skal se ut. 
+                    </p>
+
+                <figure>
+
+                    <img alt="implementasjon av sosiale medier" class="bildeArtikkel" src="../bilder/implementation.PNG" >
+
+                    <figcaption>implementasjon på forside</figcaption>
+
+                </figure>
+
+                  <figure>
+
+                        <img alt="implementasjon av sosiale medier" class="bildeArtikkel3" src="../bilder/facebook_preview.PNG" >
+    
+                        <figcaption>Denne siden ser slik ut ved deling på Facebook</figcaption>
+    
+                    </figure>
+
+                    <figure>
+
+                            <img alt="implementasjon av sosiale medier" class="bildeArtikkel3" src="../bilder/twitter_preview.PNG" >
+        
+                            <figcaption>og slik ut ved deling på Twitter</figcaption>
+        
+                        </figure>
+
+                        <figure>
+
+                                <img alt="implementasjon av sosiale medier" class="bildeArtikkel3" src="../bilder/twitter_preview2.PNG" >
+            
+                                <figcaption>Forsiden ser slik ut ved deling på Twitter</figcaption>
+            
+                            </figure>
+
+                            <figure>
+
+                                    <img alt="implementasjon av sosiale medier" class="bildeArtikkel3" src="../bilder/facebook_preview1.PNG" >
+                
+                                    <figcaption>og slik ut ved deling på Facebook</figcaption>
+                
+                                </figure>
+
+                                <h3>Kilder</h3>
+                                <p class="kilder">
+                                    - Tom Heine Nätt, E. M. (2017). Webutvikling. Gyldendal. <br>
+                                    -Forelesningsnotater
+                                    
+                                </p>
+
+                                <button class="btn" id="print">Skriv ut</button>
+
+
+            </article>
+        </main>
+
+        <footer id="footer">
+            <!--Footereren på nettsiden med kontaktinfo-->
+            2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a>
+            <br>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

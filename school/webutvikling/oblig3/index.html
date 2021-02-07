@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovedside</title>
+    <link rel="stylesheet" type="text/css" href="stilark/stilark.css">
+    <!--Linker til stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <!--Google fonts-->
+    <link rel="stylesheet" type="text/css" href="stilark/normalize.css">
+    <!--Linker til stilark-->
+    <script src="script/klokke.js"></script>
+
+</head>
+
+<body>
+
+        <div class="wrapper">
+    
+        <!--Wrapper som ligger rundt alle elementer i body for å oppnå GRID-layout-->
+
+        <header>
+
+            <h2 id="header"> Ressursside webutvikling</h2>
+            <!--Setter overskrift i headeren-->
+
+            <p id="klokkeutskrift"></p>
+
+            <nav>
+
+                <ul>
+                    <!--Lager en meny i headeren-->
+
+                    <li><a href="index.html">Hjem</a> </li>
+                    <li><a href="html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li><a href="html/medietyper.html">Mediatyper</a> </li>
+                    <li><a href="html/csslayouts.html">CSS layouts</a> </li>
+                    <li><a href="html/video_audio.html">Video & Audio</a> </li>
+                    <li><a href="html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li><a href="html/sass_css.html">SASS</a> </li>
+
+
+                </ul>
+            </nav>
+
+            <hr>
+
+        </header>
+
+        <main>
+            <!--Hovedinnholder på nettsiden-->
+
+            <article class="container">
+                <!--Artikkel del, hvor sammendrag av ulike artikler listes opp. Flexbox tas i bruk -->
+
+                <!--Lister opp en rekke artikler (sammendrag)-->
+
+                <div class="artikkel">
+
+                    <h1>HTML skjemaer</h1>
+
+                    <p>Denne artikkelen beskriver hvordan er HTML skjema er bygd opp, samt hvilke forskjellige felttyper som finnes. Den inneholder også et enkelt eksempel på et HTML-skjema
+                    </p>
+                    <figure>
+                        <img class="bildeForside" alt="htmlForm" src="bilder/htmlForm.png">
+                    </figure>
+
+                    <a href="html/htmlskjema.html" class="btn">Gå til</a>
+
+                </div>
+
+                <hr>
+
+                <div class="artikkel">
+
+                    <h1>Media typer</h1>
+                    <p>Denne artikkelen forklarer hva media typer er, samt hvordan man bruker disse. Den vil også ta opp ulike fordeler og ulemper, samt beskrive hvorfor noen media typer ikke lenger like mye brukt som tidligere.
+                    </p>
+                    <figure>
+                        <img class="bildeForside" alt="css" src="bilder/css.jpg">
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <a href="html/medietyper.html" class="btn">Gå til</a>
+
+                </div>
+
+                <hr>
+
+                <div class="artikkel">
+
+                    <h1>Css layouts</h1>
+                    <p>Denne artikkelen vil beskrive de ulike metodene for layouts i CSS. Her inngår CSS grid, CSS flexbox og en rekke eldre metoder som har blitt brukt for oppnå struktur i CSS
+                    </p>
+                    <figure>
+                        <img class="bildeForside" alt="gridlayout" src="bilder/gridLayout.png">
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <a href="html/csslayouts.html" class="btn">Gå til</a>
+
+                </div>
+
+                <hr>
+
+                
+                <div class="artikkel">
+
+                    <h1>Video/ Audio i HTML 5</h1>
+                    <p> Denne artikkelen beskriver video og audio fungerer i HTML 5. Hvordan de brukes, og støtte i 
+                        ulike nettlesere, fordeler og ulemper. 
+                    </p>
+                    <figure>
+                        <img class="bildeForside" alt="medieInnhold" src="bilder/html5.png">
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <a href="html/video_audio.html" class="btn">Gå til</a>
+
+                </div>
+
+                <hr>
+
+                
+                <div class="artikkel">
+
+                    <h1>Responsivt design</h1>
+                    <p>
+                        Denne artikkelen handler om hva responsivt webdesign er, samt hva som er viktig å tenke på/ ta i bruk
+                        for å oppnå responsivt design. 
+                    </p>
+                    <figure>
+                        <img class="bildeForside" alt="responsivtDesign" src="bilder/responsivt.png">
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <a href="html/responsivtDesign.html" class="btn">Gå til</a>
+
+                </div>
+
+                <hr>
+
+                <div class="artikkel">
+
+                    <h1>SASS/ CSS</h1>
+                    <p>
+                        Denne artikkelen beskriver hvordan SASS fungerer i forhold til å skrive tradisjonell CSS. 
+                    </p>
+                    <figure>
+                        <img class="bildeForside" alt="SASS" src="bilder/sass.png">
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <a href="html/sass_css.html" class="btn">Gå til</a>
+
+                </div>
+
+                <hr>
+
+
+
+
+
+
+            </article>
+
+        </main>
+
+        <!--Sidekolonnen på siden. En del av grid-layout-->
+
+        <aside>
+
+            <div id="video">
+                <!--Video embeded fra youtube-->
+
+                <h1>CSS Grid- en guide</h1>
+
+                <!--Bruker iframe da dette er best for eksterte kilder (ellers/ideelt og bruke <video>-->
+
+                <iframe src="https://www.youtube.com/embed/jV8B24rSN5o">
+                </iframe>
+
+            </div>
+
+            <div id="resDesign">
+                <!--Linker til fem artikler om responsivt web-design-->
+
+                <h1>Responsivt design- noen artikler</h1>
+                <br>
+                <p><a target=blank href="https://www.w3schools.com/html/html_responsive.asp">w3schools</a></p>
+                <p><a target="blank" href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">Smashingmagazine</a></p>
+                <p><a target="blank" href="https://en.wikipedia.org/wiki/Responsive_web_design">Wikipedia</a> </p>
+                <p><a target="blank" href="https://www.invisionapp.com/inside-design/examples-responsive-web-design/">Invisionapp</a></p>
+                <p><a target="blank" href="https://developers.google.com/web/fundamentals/design-and-ux/responsive">Google developers</a> </p>
+
+            </div>
+
+            <div id="html-skjema">
+            <!--seksjon som inneholder link til søketreff om HTML-skjemaer-->
+
+            <h1>Les om HTML-skjemaer</h1>
+
+            <a target="blank" href="https://www.google.com/search?q=html+forms&oq=html+forms&aqs=chrome..69i57j0l5.6251j0j7&sourceid=chrome&ie=UTF-8" class="btn">Google treff</a>
+
+    </div>
+
+    </aside>
+
+    <footer>
+        <!--footer med kontaktinfo-->
+
+        Alexander Gilstedt| 2019 | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a>
+
+    </footer>
+
+</div>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Microdata</title>
+    <link rel="stylesheet" type="text/css" href="../stilark/stilark.css">
+    <meta name="google-site-verification" content="bsQJIWN_8yqKGE0mWBA-WDNyK186vwG4JWGGhwSQxME" />
+    <!--Linker til stilark-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/normalize.css">
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css">
+    <!--Linker til print stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <script src="../script/print.js">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="wrapperArtikkel">
+
+        <header>
+            <nav id="menyen">
+
+                <h2>Ressursside webutvikling</h2>
+                <!--Setter overskrift i headeren-->
+
+                <ul>
+                    <!--Lager en meny i headeren-->
+                    <li><a href="../index.html">Hjem</a> </li>
+                    <li><a href="../html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li><a href="../html/medietyper.html">Mediatyper</a> </li>
+                    <li><a href="../html/csslayouts.html">CSS layouts</a> </li>
+                    <li><a href="../html/video_audio.html">Video & Audio</a> </li>
+                    <li><a href="../html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li><a href="../html/sass_css.html">SASS</a> </li>
+                    <li><a href="../html/seo.html">SEO</a> </li>
+                    <li><a href="../html/tilgjengelighet.html">Universiell utforming</a> </li>
+                    <li><a href="../html/sosialeMedier.html">Sosiale medier</a> </li>
+                    <li><a href="../html/microdata.html">Microdata</a> </li>
+
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+     
+        <main>
+
+            <article>
+                <!--Angir artikkelen hvor hovedtekst er-->
+
+                <h1>Microdata</h1>
+
+                <p class="dato">01.11.2019</p>
+                <!--Setter dato i artikkelen-->
+
+                <p class="info">
+                    Denne artikkelen skal ta for seg micro data. Den vil beskrive hva det er, hvorfor det benyttes og hvilke fordeler 
+                    oppmerking av innhold med microdata har. Videre vil jeg vise 5 forskjellige eksempelsider, som hver inkluderer 
+                    informasjon som er strukturert med ulike microdata-vocabular. Det vil også vises hvordan google bruker denne 
+                    informasjonen gjennom testing i
+                    <a target="blank" href="https://search.google.com/structured-data/testing-tool">Google webmaster tools</a>
+                </p>
+
+                <p class="info">
+                    Microdata er en del av HTML 5 standaren, og lar utvikleren markere innholdstype og anngi hvilken betydning deler av 
+                    innholdet har. Microdata er i seg selv noen ekstra atributter man kan gi alle html-tagger. 
+                    Man ser da at tagger som ikke har noen semantisk betydning, får betydning ved microdata, og dette er 
+                    kritisk viktig ved maskinell lesning og søkemotoroptimalisering.
+                </p>
+
+                <p class="info">
+                    Atributtene man kan gi HTML-taggene er <code> itemscope, itemporp, itemtype, itemid og itemref </code>. 
+                    Første steg i implementering av microdata er å gi atributten <code>itemscope= "itemscope"</code> til en HTML-tagg 
+                    som omslutter informasjonen man vil inkludere microdata i. Dette forteller at alt som kommer innenfor denne taggen 
+                    er av samme type informasjon. Neste steg er å finne et vokabular, altså et sett med forhåndsbestemte roller som beskriver
+                     kun den typen innhold vi vil markere. Den finnes flere vokabular for å markere microdata, men Schema.org inneholder mange
+                    som er støttet av de største søkemotorene, og vil da være den mest fornuftige og inkludere. Som man kan se i eksempelsidene
+                     nedenfor bruker jeg schema.org som vokabular.
+                </p>
+
+                <p class="info">
+                    Innhold som er merket med microdata er som nevnt viktig for søkemotorene. Innhold som ikke er dekket av tagger med semantisk
+                     betydning, får plutselig betydning, og det kan tolkes av både søkemotorer og for eksempel skjermlesere.
+                </p>
+
+                <h3>Eksempelsider</h3>
+
+                <p class="info">
+                    <strong>Eksempel 1</strong>
+                    <br> Her kan du se nettsiden for eksempel 1: <a href="../microdata/person.html">Eksempel 1</a>. Dette eksempelet tar for seg 
+                    en person, og inneholder informasjon om denne personen. Nedenfor vises hvordan google leser informasjonen i denne artikkelen,
+                     samt hva slags kode som er brukt for å oppnå dette. Som bildet viser, tolker google informasjonen på forventet måte, og viser 
+                     ingen feil eller advarsler.
+                </p>
+
+                <figure>
+
+                    <img alt="Kodebit ved bruk av typen person" src="../bilder/kode_microdata1.PNG" class="bildeArtikkel6">
+
+                    <figcaption>implementering av microdata: Person</figcaption>
+
+                </figure>
+
+                <figure>
+
+                    <img alt="Viser validering av microdata" src="../bilder/tes1_microdata.PNG" class="bildeArtikkel6">
+
+                    <figcaption>Test av kode gjennom google webmaster tools</figcaption>
+                </figure>
+
+                <p class="info">
+                    <strong>Eksempel 2</strong>
+                    <br> Her kan du se nettsiden for eksempel 2: <a href="../microdata/arrangement.html">Eksempel 2</a>. Dette tar for seg et
+                     arrangement, hvor det i informasjonen er inkludert microdata. Nedenfor ses koden samt hvordan google leser denne informasjonen.
+                </p>
+
+                <figure>
+
+                    <img alt="Kodebit ved bruk av typen event" src="../bilder/kode_microdata2.PNG" class="bildeArtikkel6">
+
+                    <figcaption>implementering av microdata: Event </figcaption>
+
+                </figure>
+
+                <figure>
+
+                    <img alt="Viser validering av microdata" src="../bilder/test2_microdata.PNG" class="bildeArtikkel6">
+
+                    <figcaption>Test av kode gjennom google webmaster tools</figcaption>
+                </figure>
+
+                <p class="info">
+                    <strong>Eksempel 3</strong>
+                    <br> Her kan du se nettsiden for eksempel 3: <a href="../microdata/band.html">Eksempel 3</a>. Dette tar for seg en
+                     musikkgruppe, hvor det i informasjonen er inkludert microdata. Nedenfor ses koden samt hvordan google leser denne informasjonen.
+                </p>
+
+                <figure>
+
+                    <img alt="Kodebit ved bruk av typen musicGroup" src="../bilder/kode_microdata3.PNG" class="bildeArtikkel6">
+
+                    <figcaption>implementering av microdata: musicGroup </figcaption>
+
+                </figure>
+
+                <figure>
+
+                    <img alt="Validering av microdata" src="../bilder/test3_microdata.PNG" class="bildeArtikkel6">
+
+                    <figcaption>Test av kode gjennom google webmaster tools</figcaption>
+                </figure>
+
+                <p class="info">
+                    <strong>Eksempel 4</strong>
+                    <br> Her kan du se nettsiden for eksempel 4: <a href="../microdata/film.html">Eksempel 4</a>. Dette tar for seg en film, 
+                    hvor det i informasjonen er inkludert microdata. Nedenfor ses koden samt hvordan google leser denne informasjonen.
+                </p>
+
+                <figure>
+
+                    <img alt="Kodebit ved bruk av typen movie" src="../bilder/kode_microdata4.PNG" class="bildeArtikkel6">
+
+                    <figcaption>implementering av microdata: Movie </figcaption>
+
+                </figure>
+
+                <figure>
+
+                    <img alt="Validering av microdata" src="../bilder/test4_microdata.PNG" class="bildeArtikkel6">
+
+                    <figcaption>Test av kode gjennom google webmaster tools</figcaption>
+                </figure>
+
+                <p class="info">
+                    <strong>Eksempel 5</strong>
+                    <br> Her kan du se nettsiden for eksempel 5: <a href="../microdata/bok.html">Eksempel 5</a>. Dette tar for seg en bok,
+                     hvor det i informasjonen er inkludert microdata. Nedenfor ses koden samt hvordan google leser denne informasjonen.
+                </p>
+
+                <figure>
+
+                    <img alt="Kodebit ved bruk av typen bok" src="../bilder/kode_microdata5.PNG" class="bildeArtikkel">
+
+                    <figcaption>implementering av microdata: Book </figcaption>
+
+                </figure>
+
+                <figure>
+
+                    <img alt="Validering av microdata" src="../bilder/test5_microdata.PNG" class="bildeArtikkel">
+                    <figcaption>Test av kode gjennom google webmaster tools</figcaption>
+                </figure>
+
+
+                <h3>Kilder</h3>
+                <p class="kilder">
+                    - Tom Heine Nätt, E. M. (2017). Webutvikling. Gyldendal. <br>
+                    -Forelesningsnotater
+                    
+                </p>
+
+                <button class="btn" id="print">Skriv ut</button>
+
+            </article>
+        </main>
+
+        <footer id="footer">
+            <!--Footereren på nettsiden med kontaktinfo-->
+            2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a>
+            <br>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

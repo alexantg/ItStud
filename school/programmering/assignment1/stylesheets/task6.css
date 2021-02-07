@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    min-height: 80vh;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.button{
+    background-color:black;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    }
+

@@ -1,0 +1,240 @@
+
+    *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    body{
+    background-color:white;
+    font-family: sans-serif;
+    background-image: url("../bilder/bk4.jpg");
+    position: relative;
+    
+    }
+
+
+    main{ /*setter verdier til main-taggen på nettstedet*/
+    max-width: 1000px;
+    margin-left:16.5%;
+    margin-right: 16.5%;
+    margin-top: 1%;
+    padding-top:50px;
+    background-color:white;
+    display: block;
+    min-height: 1000px;
+    overflow: hidden;
+    
+    
+    }
+
+   
+    header{ /*setter bredde, margin og bakgrunns-farge i headeren*/
+    max-width: 1000px;
+    margin-left:16.5%;
+    margin-right: 16.5%;
+    background-color: white;
+    text-align: center;
+    }
+
+    div{   /*setter bredde, høyde, farge og kant-egenskaper på diver*/
+    float: left;     
+    width: 150px;
+    height: 320px;
+    border: 4px solid lightskyblue;
+    background-color: white ;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 11px;
+    margin-left: 5px;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    margin-top: 10%;
+    box-shadow:  inset 0 0 10px #000000; 
+        }
+
+        
+    h1{ /*setter størrelse på artikkeloverskfiter*/
+    font-size:30px;
+    }
+   
+    p{ /*setter størrelse og padding på avsnitt*/
+    font-size: 110%; 
+    padding-top: 10px;   
+    }
+   
+       
+    aside{ /*setter margin, text-align og bredde på aside*/
+    float: right;
+    margin-right: 15%;
+    text-align: center;
+    padding-top: 150px;
+    width: 200px;     
+    }
+   
+    article{ /*anngir stil på articles*/
+    margin-left:15%;
+    width: 45%;
+    margin-top:40px;
+    float: left;    
+    }
+      
+    img{ /*anngir bredde, høyde og margins på bilder*/
+    width: 250px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+
+    figcaption{ /*setter egenskaper på bildebeskrivelsen*/
+    text-align: center;
+    padding-left: 40px;
+    font-style: italic;
+
+    }
+   
+    footer{ /*setter egenskaper på footeren*/
+    clear: both;
+    position: relative;
+    height: 200px;
+    padding-top: 100px;
+    text-align: center;
+        
+    }   
+   
+    h2{ /*setter egenskaper på hovedoverskriften*/
+    text-shadow: 2px 2px 7px lightskyblue;
+    font-size: 40px;
+    
+    }
+    h3{
+        font-size:20px;
+        font-style: normal;
+        padding-top: 20px;
+    }
+
+    #klokkeutskrift{ /*posisjonerer klokken*/
+    float: right;
+    padding-right: 10px;
+    margin-bottom: 2%;
+    height: 2px;
+     }
+  
+    #datoutskrift{ /*posisjonerer datoen*/
+    padding-left: 10px;
+    float: left;
+    margin-bottom: 2%;
+    height: 2px;
+     }
+
+    #under{ /*anngir plassering for seskjonen med div-tagger på forsiden*/
+    
+    float: left;
+        
+    }
+
+    #over{ /*anngir plassering for seskjonen med div-tagger på forsiden*/
+    
+    float: right;
+    }
+
+    #velkommen { /*plasserer teksten i velkommen-paragfrafen til center*/
+    text-align: center;
+    }
+
+
+    #menyen ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+        }
+
+    #menyen ul>li{ /*setter menyen til hundre% bredde, sentrerer teksten og setter bakgrunnsfarge*/
+    text-align: center;
+    margin-bottom: -1px;
+    background-color:lightskyblue;
+
+     }
+
+
+    #menyen ul>li>a{ /*settr egenskaper til meny-blokkene*/
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+        }
+
+    #menyen ul>li:hover{ /*setter egenskaper til menyblokkene, og tekst-dekorasjon*/
+    box-shadow: 0px 0px 15px black;
+    z-index: 1;
+    text-decoration: underline;
+    background-color:white;
+         }
+
+    #menyen div>a>img{
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+
+     }
+         
+    #menyen ul{
+    flex-wrap: nowrap;
+    position: initial;
+    justify-content: space-between;
+     }
+
+    #menyen ul>li{
+    flex: auto;
+    margin-bottom: 0px;
+
+    }
+
+    #menyen ul>li>a{
+    padding: 10px;
+    
+    }
+
+    .kilder{ 
+        margin-top: 50px;
+    }
+        
+    .btn{ /*anngir egenskaper for knapper*/
+    background-color:#84ccf9;
+    color:black;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-top: 5px; 
+    text-decoration: none;
+    margin-top: 20px;
+    }
+        
+  
+
+  .p{ /*anngir egenskaper til avsnitt i div-taggene*/
+   font-size: 16px; 
+   padding-top: 30px;   
+   }
+
+  .logo{ /*anngir egenskaper til logo i footer*/
+   width: 30px;
+   height: 30px;
+   margin-top: 5px;
+    }
+
+      
+  .artikkelDato{ /*anngir størrelse på dato i artikkel */
+   font-size: 20px;
+    }
+
+  
+
+ 
+
+   

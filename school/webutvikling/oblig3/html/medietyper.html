@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mediatyper</title>
+    <link rel="stylesheet" type="text/css" href="../stilark/stilark.css">
+    <!--Linker til stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <!--Google font-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/normalize.css">
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css">
+    <!--Linker til print stilark-->
+    <script src="../script/print.js"> </script>
+    <!--Linker til scriptet på siden-->
+
+</head>
+
+
+<body>
+
+    <div class="wrapperArtikkel">
+
+        <header>
+
+            <h2>Ressursside webutvikling</h2>
+            <!--Setter overskrift i headeren-->
+
+            <nav id="menyen">
+                <ul>
+                    <!--Lager en meny i headeren-->
+
+                    <li><a href="../index.html">Hjem</a> </li>
+                    <li><a href="../html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li><a href="../html/medietyper.html">Mediatyper</a> </li>
+                    <li><a href="../html/csslayouts.html">CSS layouts</a> </li>
+                    <li><a href="../html/video_audio.html">Video & Audio</a> </li>
+                    <li><a href="../html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li><a href="../html/sass_css.html">SASS</a> </li>
+
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+
+
+        <main>
+
+
+
+            <article>
+                <!--Angir artikkelen hvor hovedtekst er-->
+
+                <h1>Medietyper</h1>
+
+
+                <p class="dato">24.09.2019</p>
+                <!--Setter dato i artikkelen-->
+
+                <p class="info">
+                    Ofte er det hensiktsmessig å få ulike sett med CSS-regler til å gjelde i ulike situasjoner. Dette kan man oppnå med å definere
+                    mediatype. Når vi definerer hva slags mediatype et sett med CSS-regler er, forteller vi samtidig nettleseren i hvilken situasjon
+                    reglene skal gjelde. Man kan definere en mengde ulike medietyper i CSS, og noen er mer vanlige enn andre. Denne artikkelen vil ta for seg
+                    de mest vanlige, noen andre samt fordeler og ulemper angående disse.
+                </p>
+
+                <p class="info">
+                    Den første vanlige medietypen som brukes er "all". Som det fremgår av navnet vil CSS med medietypen "all" gjelde i alle situasjoner. Den vil
+                    altså gjelde for både pcer, mobiler, nettbrett osv med mindre vi spesifiserer en annen medietype som gjelder samtidig, da vil denne medietypen
+                    overstyre all. Snur vi på det, vil å spesifisere medietypen "all" være det samme som å ikke spesifisere noen medietype i det hele tatt.
+                    <br>
+                    Den andre vanlige medietypen er "screen". Denne brukes når CSS-reglene skal gjelde når innholdet skal vises på en skjerm. Dette innebærer da pc-skjermer
+                    mobilskjermer og for eksempel nettbrett. Den spesifiserer ikke hva slags type skjermer, og stilarket vil være gjeldende uansett hvilken skjerm innholdet vises på.
+                    Med denne medietypen er det derfor alltid hensiktsmessig å inkludere media queries. Med media queries kan vi for eksempel spesifisere hvilke regler i stilarket
+                    som skal gjelde for ulike skjermstørrelser.
+
+                </p>
+
+                <figure>
+                    <img alt="media types link" class="bildeArtikkel" src="../bilder/mediaTypesLink.PNG">
+                    <figcaption>Slik kan media type spesifiseres i link-taggen</figcaption>
+                </figure>
+
+                <p class="info">
+                    Den neste viktige mediatypen er "print". Denne gjelder følgelig når innholdet på siden skal skrives ut. CSS-reglene som blir brukt her
+                    er mye av de samme som blir brukt i mediatypen "screen", men det finnes noen spesielle CSS-regler som bare gjelder "print". Typiske eksempler
+                    på egenskaper som bare er brukt ved media "print" er "page-break-inside" og "page-break-before". Med disse kan vi fortelle nettleseren at vi for eksempel
+                    vil unngå sideskift i utsktiften midt i et HTML-element, eller vi kan motsatt si at vi alltid ønsker å ta et sideskift før et gitt HTML-element.
+                    Et stilark med media "print" er forøvrig brukt på denne siden, og kan brukes som eksempel.
+                </p>
+
+                <p class="info">
+                    Videre må vi også ha med en annen viktig medietype, nemlig "speech". Denne mediatypen brukes til opplesning av innhold på nettsiden, altså av
+                    taleassistenter og skjermlesere. Ved å anngi mediatypen "speech" kan vi i CSS styre stemmer, lyder og liknende. Det vil si at vi med ett sett
+                    CSS-regler kan optimalisere lytteropplevelsen ved opplesning. Vi kan eksempelvis endre på hva slags type stemme som skal høres, hvor høy den
+                    skal være og i hvilket tempo den skal lese i.
+                </p>
+
+                <p class="info">
+                    Ovenfor er det nevnt en måte å spesifisere hva slags mediatype et sett med CSS-regler er, men man kan også ha flere mediatyper i samme stilark.
+                    Da kan man enten la være og definere noe i linken (avbildet ovenfor), eller man kan bruke mediatypen "all". De forskjellige mediatypene vi definerer
+                    i selvestilarket vil da "overskrive" eller bli gjeldende mediatype, fordi "all" også gjelder i alle situasjoner. I et stilark kan vi for eksempel definere
+                    media "print" slik at denne delen av stilarket gjelder ved utskrift.
+                </p>
+
+                <figure>
+                    <img src="../bilder/mediaTypesCSS.PNG" alt="media types css" class="bildeArtikkel">
+                    <figcaption>Slik kan media type spesifiseres i CSS</figcaption>
+                </figure>
+
+                <p class="info">
+                    Ovenfor er de aller viktigste mediatypene nevnt, og også de som er flittigst brukt. Vi har også noen mediatyper som ikke lenger er like
+                    gjeldende, og heller aldri har vært like viktige. Et eksempel på dette er for eksempel mediatypen "handheld". Dette skulle i utgangspunktet
+                    være en mediatype som skulle gjelde for mobile/håndholdte enheter. Problemet med denne typen var at det var vanskelig å skille mellom de ulike
+                    håndholdte enhetene. Media queries er derfor en mye bedre løsning i dette tilfellet, sammen med for eksempel mediatypen "screen". "Hanheld" er
+                    derfor nesten ikke i bruk pågrunn av gode løsninger for responsivt design. En annen medietype som på samme måte er på vei ut er Projection. Dette er en mediatype for ulike visningsmodus innholdet skulle kunne bli
+                    vist i. På samme måte som ovenfor, er det bedre å løse dette med metoder for responsivt design.
+                </p>
+
+                <p class="info">
+                    Den klare fordelen med å bruke mediatypes er at vi lett kan skille mellom hvilke CSS-regler som skal brukes i hvilken situasjon. Dette
+                    er veldig effektivt i de situasjonene det trengs, slik som for eksempel ved utskrfit. <br>
+                    Som vi har sett, er det mange av mediatypene som er på vei ut pågrunn av bedre løsninger, og spessielt responsivt design. Dette medfører en ulempe
+                    ved at de aller fleste medietyper kan bli noe overfladisk. På den andre siden, vil de kanskje forsvinne etterhvert som de blir mindre og mindre brukt.
+                    Det er også viktig å huske på at hvis man skulle velge å bruke noen av de mer "utgåtte" medietypene er det ikke sikkert de er støttet i alle nettlesere, noe
+                    som er en ulempe.
+
+                </p>
+
+                <h3>Kilder</h3>
+                <p class="kilder">
+                    - Duckett, J. (2011). HTML & CSS Design and build Websites. John Willey & Sons, inc. <br>
+                    - Tom Heine Nätt, E. M. (2017). Webutvikling. Gyldendal. <br>
+                    - W3schools. (u.d.). Hentet fra https://www.w3schools.com/html/html_forms.asp <br>
+                </p>
+
+                <button class="btn" id="print">Skriv ut</button>
+
+
+            </article>
+        </main>
+
+
+
+        <footer id="footer">
+            <!--Footereren på nettsiden med kontaktinfo-->
+            2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a> <br>
+
+        </footer>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

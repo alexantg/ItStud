@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    </title></title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <script src="../script/script.js"></script>
+
+    </head>
+
+<body>
+
+    <main>
+
+        <a href="../index.html" class="btn">Home</a>
+
+        <article>
+
+         <center> <h1>Task 8- Advance plan</h1> </center>
+
+        <div class="divTasks">
+
+
+            <p class="info">
+                In order to present the statistics in a dynamic way, i dont think it would be necessary to change the way i store data. I would proceed
+                the same way i did before with the file-reading process aswell. Instead of the statistics-table, the user would get an input field instead. 
+                Then i would loop over the array, checking if the input value matches either of the cells. This would be acheived with nested loops. If the user
+                inputs for example "oslo". I would loop the array and collect all the amounts for the value inputed. 
+            </p>
+
+            <p class="info">
+                I believe this can be achieved somewhat simmilar to the way i solved it before. I would push every amount that matches the input value into a 
+                new array, and use the existing functions to calculate the statistics. (the functions that calculates if the array is one-dimensional). These functions
+                will then return the total, max, min and average value for the array the function is provided. In this case, this will be the array of amounts 
+                that belongs to the inputted value. 
+            </p>
+
+            <p class="info">
+                I would also need to change the way i present the results. The HTML-table needs to be fully dynamic because it is supposed to be displaying different
+                things every time. I would have one table that shows all of the transactions (for example for Oslo), then i would have a second table that displays the 
+                proper statistics. I dont think it would be necessary to store the statistics in an array this time, i would rather run each calculating-function with the
+                wanted array as an argument, and print the result. 
+            </p>
+
+            <p class="info">
+                The part of the advanced planning i am more uncertain of, is how to display transactions for a given time-period. I believe i would somehow loop over
+                the array and start pushing amounts into a new array at the start-point of and stops when it reaches the end point. The problem with this approach is 
+                that the time-stamps in the data file have structure, and it would be difficult to sepereate them into different time-periods. 
+
+            </p>
+
+         
+
+           </div>
+
+  
+           
+
+        </article>
+
+
+
+
+
+    </main>
+
+  
+
+    
+</body>
+</html>

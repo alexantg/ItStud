@@ -1,0 +1,130 @@
+
+    header{
+    top: 20;
+    text-align: center;
+    margin: 0 auto;
+        }
+
+
+    body{
+    text-align: center;
+    background-color: white ;
+
+        }
+   
+
+ .button{
+ background-color: limegreen;
+ color: black;
+ padding: 0.4rem 1.0rem;
+ text-align: center;
+ font-size: 15px;
+ border-radius: 10px;
+ text-decoration: none;
+ margin-top: 20px;
+            }
+        
+
+    p{
+    font-size: 150%;
+    }
+
+   
+
+    select{
+    margin-top: 2%;
+    font-size: 120%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    }
+
+    h2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3.5rem;
+    color: black;
+    }
+
+    h1{
+        color: black;
+    }
+
+  
+
+    footer{
+        margin-top: 10%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: inherit;
+    }
+
+    span{
+        font-size: 150%;
+    }
+    
+
+    .div{
+        margin: 0 auto; 
+        margin-top: 5%;
+        border: 2px solid black;
+        text-align: center;
+        padding: 2%;
+        width: 10rem;
+        height: 10rem;
+        font-family: 'Robot mono', monospace;
+    }
+
+    #text{
+        font-size: 30px;
+    }
+    
+
+    #text{
+        color: forestgreen;
+    }
+
+    #printElements{
+        float: left;
+    }
+    #printInfo{
+        float: right;
+    }
+
+    .div1{
+        margin: 0 auto;
+   
+        width: 20rem;
+    }
+    #port1{
+        float: left;
+        margin-left: 30rem; 
+    }
+    #port2{
+        float: right;
+        margin-right: 30rem;
+    }
+    #bool1{
+        text-transform: lowercase;
+    }
+    #bool2{
+        text-transform: lowercase;
+    }
+
+    input{
+        height: 1.5rem; 
+        width: 10rem;
+    }
+    a{
+        float: left;
+    }
+    .home{
+        float: left;
+        margin-left: 20rem;
+    }
+
+   
+
+    
+
+    

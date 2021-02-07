@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   
+
+    <!--Norsk tegnsetting-->
+    <title>HTML-skjema</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="../stilark/stilark.css">
+    <!--Linker til stilark-->
+    <link rel="stylesheet" type="text/css" media="all" href="../stilark/normalize.css">
+    <!--Linker til print stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <!--Henter en font fra google fonts-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css">
+
+    <script src="../script/print.js"> </script>
+
+
+</head>
+
+
+
+<body>
+
+    <div class="wrapperArtikkel">
+        <!--Lager en "wrapper" som skal sørge for grid layout -->
+
+        <header>
+
+
+            <h2>Ressursside webutvikling</h2>
+            <!--Setter overskrift i headeren-->
+
+            <nav id="menyen">
+
+                <ul>
+                    <!--Lager en meny i headeren-->
+
+                    <li><a href="../index.html">Hjem</a> </li>
+                    <li><a href="../html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li><a href="../html/medietyper.html">Mediatyper</a> </li>
+                    <li><a href="../html/csslayouts.html">CSS layouts</a> </li>
+                    <li><a href="../html/video_audio.html">Video & Audio</a> </li>
+                    <li><a href="../html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li><a href="../html/sass_css.html">SASS</a> </li>
+
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main>
+
+
+            <article>
+                <!--Angir artikkelen hvor hovedtekst er-->
+
+                <h1>HTML skjemaer</h1>
+
+
+                <p class="dato">21.09.2019</p>
+                <!--Setter dato i artikkelen-->
+
+                <!--En rekke p-tagger som inneholder informasjonen i artikkelen-->
+
+                <p class="info">
+
+                    HTML- skjemaer er en veldig vanlig måte å hente informasjon som er input fra en bruker. Et HTML skjema kan være bygd
+                    på flere måter, men en av de vanligste formene for skjema er en søkebar og søkeknapp, som for eksempel i en søkemotor.
+                    Det er følgelig flere ulike typer HTML-skjemaer avhengig av hva slags input man er ute etter fra brukeren. Forskjellige
+                    typer input felter utgjør derfor et HTML-skjema. Slike skjemaer er en viktig del av både innhold og designet til et
+                    nettsted, spessielt fordi det muliggjør en rekke funksjonalitet. Søk via søkefelt er nevnt ovenfor, og i tilegg har vi
+                    ting som påmelding, registrering og innlogging.
+
+                </p>
+
+                <p class="info">
+
+                    Et HTML-skjema blir definert i HTML med taggen &lt; form &gt;. Dette anngir at seksjonen eller denne delen av
+                    nettstedet er en del av et form/ HTML skjema. Dette skjemaet skal ofte ha en funksjonalitet, eksempelvis en av
+                    de nevnt ovenfor. Et form har derfor ofte atributten: action. For å illustrere hva denne atributten gjør kan vi
+                    ta for oss for eksempel et skjema for påmelding. I det man melder seg på skal ofte informasjonen sendes videre og
+                    lagres på en server. Action- atributten holder derfor på URL-en til nettstedet på serveren som skal ta imot denne
+                    informasjonen. I tillegg må et hvert HTML-form tillegnes en method. Dette kan enten være get eller post, disse spesifiser
+                    hvordan informasjonen i skjemaet skal bli sendt. I korte trekk er for eksempel "get" praktisk å bruke på korte skjemaer, mens
+                    "post" eksempelvis er ideelt hvis du har et skjema hvor det er mulig å laste opp en fil.
+
+                </p>
+
+                <p class="info">
+
+                    Innenfor et HTML-skjema har vi også en rekke ulike typer felter, eller input felter. Et felt blir definert med taggen
+                    &lt; input &gt; i HTML. Vi kan dele inn input-feltene etter hva slags funksjonalitet de gir HTML-skjemaet. Vi har eksempelvis
+                    felttypene som legger til tekst, lar brukeren gjøre valg, laste opp filer og sende informasjonen fra skjema.
+
+                </p>
+
+                <p class="info">
+
+                    Ved å anngi atributten type, kan vi bestemme hva slags felttyper vi får frem i skjemaet. En av disse er typen "text".
+                    Denne lager et inputfelt som strekker seg over en linje og tar alle typer tekstinput. Mye likt en input av typen "text"
+                    har vi også inputs med typen "password". Disse fungerer på akkurat samme måte som "text" men hovedforskjellen er at
+                    "password" skjuler karakterene som blir skrevet inn, slik at det ikke skal være mulig for andre å se hva som blir skrevet inn.
+                    En annen viktig felttype som tar imot tekst er "textarea". Dette skiller seg fra de overnevnte ved at det bruker en egen
+                    tagg, nemlig &lt; textarea &gt;. Dette feltet strekker seg over flere linjer og muliggjør lengre text-inputs fra brukeren.
+
+                </p>
+
+                <p class="info">
+
+                    Videre har vi de typiske feltene som muliggjør valg fra brukeren. Den første er en input av typen "checkbox". Ved denne
+                    typen får brukeren muligheten til å velge mellom flere ulike ting. Et eksempel på en checkbox løsning kan forøvrig ses
+                    i eksempelet nedenfor. Atributtene "value" og "name" spiller en stor rolle ved bruk av checkboxes. Feltets "value" er
+                    informasjonen som blir sendt til serveren. Dette går hånd å hånd med "name" atributten som brukes til å identifisere
+                    verdiene som blir sendt via skjemaet.
+
+                </p>
+
+                <p class="info">
+
+                    Samtidig har vi et inputfelt av typen "radio". Dette fungerer i stor grad på samme måte som checkboxes, men det går her
+                    an å bare velge et alternativ. For å identifisere hvilke radio- felt som hører sammen, slik at bare en kan være valgt om gangen,
+                    er det viktig at verdien til "name" - atrbitutten er den samme for alle feltene som skal høre sammen.
+
+                </p>
+
+                <p class="info">
+
+                    Det neste som kan være en del av et HTML- skjema er select-boxer. En select-box lar brukeren velge
+                    en ting blant en liste av andre elementer. Innenfor select-taggen anngir man er en rekke options som brukeren kan velge fra.
+                    Dette fungerer derfor, og er i seg selv en nedtrekksliste. Eksempel på dette kan også ses i skjemaet nedenfor.
+
+                </p>
+
+                <p class="info">
+
+                    Den finnes utover det overnevnte en rekke flere felttyper. Kort oppsummert er disse "file", som ser ut som en text-input, men
+                    som også viser en browse knapp som lar deg velge fil. Videre har vi typen "submit". Denne opptrert default som en knapp, og sender
+                    rett og slett skjemaet, og informasjonen den holder på til en server. Hvis man vil at submit-knappen skal se ut som et bilde, kan man
+                    bruke typen "image" og samtidig anngi en URL til bilde. Tislutt har vi typen "date", som lar brukeren velge dato fra et input felt.
+
+                </p>
+
+                <p class="info">
+
+                    En viktig del av HTML 5, er også muligheten til å validere inputen i de ulike feltene i HTML-skjemaet. Dette ble tidligere
+                    gjort i for eksempel Javascript, men HTML 5 gir browseren muligheten til å avgjøre om det brukeren har skrevet inn
+                    stemmer overens med det feltet skal ta imot. Nedenfor kan du se et eksempel på et HTML-skjema. Det fremstiller
+                    et påmeldingsskjema, men for eksempelets skyld velger jeg og ikke spesifisere hva slags påmelding det gjelder,
+                    dette for å kunne få med flest mulig av de ulike felttypene.
+
+                </p>
+
+                <!--Et eksempel på HTML-skjema som inneholder en rekke ulike input-felter-->
+
+                <div class="skjema">
+
+                    <form class="form">
+                        <!--Ingen action eller method spesifisert da informasjonen ikke skal til en server-->
+
+                        <fieldset>
+
+                            <legend>Påmeldingsskjema</legend>
+
+                            <label>Fornavn: <input required type="text"></label>
+                            <br>
+                            <br>
+                            <label>Etternavn: <input required type="text"></label>
+                            <br>
+                            <br>
+                            <label> Telefonnummer : <input required maxlength="8" type="text"></label>
+                            <br>
+                            <br>
+                            <label> E-post : <input required type="email"></label>
+                            <br>
+                            <br>
+
+                            <label> Mann : <input name="kjoenn" type="radio"></label>
+                            <label> Kvinne : <input name="kjoenn" type="radio"></label>
+                            <label> Ikke spesifiser : <input name="kjoenn" type="radio"></label>
+
+                            <br>
+                            <br>
+
+                            <label>Velg aldersgruppe:
+                                <select>
+
+                                    <option>Under 18 år</option>
+                                    <option>18-25 år</option>
+                                    <option>Over 25 år</option>
+                                </select>
+
+                            </label>
+                            <br>
+                            <br>
+
+                            <label>Ekstern informasjon: <input required type="file"></label>
+                            <br>
+                            <br>
+
+                            <textarea name="info" cols="40" rows="15">Generell informasjon her
+                         </textarea>
+
+                            <br>
+                            <br>
+
+                            <input type="submit" value="Meld meg på">
+
+                        </fieldset>
+
+                    </form>
+                </div>
+
+
+                <!--Kilde-referanse-->
+
+                <h3>Kilder</h3>
+                <p class="kilder">
+                    - Duckett, J. (2011). HTML & CSS Design and build Websites. John Willey & Sons, inc. <br>
+                    - Tom Heine Nätt, E. M. (2017). Webutvikling. Gyldendal. <br>
+                    - W3schools. (u.d.). Hentet fra https://www.w3schools.com/html/html_forms.asp <br>
+                </p>
+
+
+                <button class="btn" id="print">Skriv ut</button>
+
+            </article>
+
+
+
+        </main>
+
+
+
+        <footer id="footer">
+            <!--Footereren på nettsiden med kontaktinfo-->
+            2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a> <br>
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+</html>

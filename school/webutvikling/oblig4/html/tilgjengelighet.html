@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Universiell utforming</title>
+    <link rel="stylesheet" type="text/css" href="../stilark/stilark.css">
+    <meta name="google-site-verification" content="bsQJIWN_8yqKGE0mWBA-WDNyK186vwG4JWGGhwSQxME" />
+
+    <!--Linker til stilark-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/normalize.css">
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css">
+    <!--Linker til print stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <script src="../script/print.js">
+    </script>
+
+</head>
+
+<body>
+
+       
+    <div class="wrapperArtikkel">
+
+        <header>
+
+            <nav id="menyen">
+
+                <h2>Ressursside webutvikling</h2>
+                <!--Setter overskrift i headeren-->
+
+                <ul>
+                    <!--Lager en meny i headeren-->
+
+                    <li tabindex="2"><a href="../index.html">Hjem</a> </li>
+                    <li tabindex="3"><a href="../html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li tabindex="4"><a href="../html/medietyper.html">Mediatyper</a> </li>
+                    <li tabindex="5"><a href="../html/csslayouts.html">CSS layouts</a> </li>
+                    <li tabindex="6"><a href="../html/video_audio.html">Video & Audio</a> </li>
+                    <li tabindex="7"><a href="../html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li tabindex="8"><a href="../html/sass_css.html">SASS</a> </li>
+                    <li tabindex="9"><a href="../html/seo.html">SEO</a> </li>
+                    <li tabindex="10"><a href="../html/tilgjengelighet.html">Universiell utforming</a> </li>
+                    <li tabindex="11"><a href="../html/sosialeMedier.html">Sosiale medier</a> </li>
+                    <li tabindex="12"><a href="../html/microdata.html">Microdata</a> </li>
+
+                </ul>
+                <hr>
+            </nav>
+        </header>
+
+        <main id="main">
+
+            <article>
+                <!--Angir artikkelen hvor hovedtekst er-->
+
+                <h1 tabindex="13">Universiell utforming</h1>
+
+                <p tabindex="14" class="dato">31.10.2019</p>
+                <!--Setter dato i artikkelen-->
+
+                <p tabindex="15" class="info">
+                    Denne artikkelen vil ta for seg universiell utforming på nettsiden. Jeg vil teste hvordan siden fungeren med skjermleser, 
+                    og med bruk av tastatur. Videre vil jeg sjekke om fargene som er brukt utgjør kontraster som er innenfor anbefalingene. 
+                    Nedenfor finnes en liste som inneholder feilene som er funnet.
+                </p>
+
+                <p tabindex="16" class="info">
+                    <strong>Skjermleser</strong> Siden fungerer godt med skjermleser, og den leser all informasjon på siden. Det var vanskelig
+                     å bytte mellom innhold med tastaturet, men dette blir nærmere omtalt i neste avsnitt.
+                </p>
+
+                <p tabindex="17" class="info">
+                    <strong>Tastatur</strong> Siden fungerte ikke godt med kun bruk av tastatur da man ikke kunne "tabbe" til de ulike delene
+                     av artikkelen. Det løste jeg ved å bruke atributten tab-index. Dett er implementert på denne siden. Dette er også forklart
+                      som en feil i listen under. Etter dette fungerte skjermleser og tastatur også godt sammen.
+
+                </p>
+
+                <h3 tabindex="18">Liste over feil</h3>
+
+                <ul tabindex="19">
+                    <li>Ingen "hopp til hovedinnhold knapp"</li>
+                    <li>Kontrast mellom bakgrunn og farge på knapper tilfredstiller ikke kravene</li>
+                    <li>Kontrast mellom farge meny-bakgrunn, og hover-farge tilfredstiller ikke kravene</li>
+                    <li>Kontrast mellom bakgrunnsfarge-knapper og skrift på knapper tilfredstiller ikke kravene</li>
+                    <li>Fungerer dårlig med bare tastatur da man ikke kan tabbe til ulike deler av artikler</li>
+                    <li>Alt-atributter på nettsiden er ikke alltid godt forklarende</li>
+                    <li>Lite forklarende linker på forside (Artikkelseksjon)</li>
+                </ul>
+               
+
+                        <h3>Kilder</h3>
+                        <p class="kilder">
+                            - Tom Heine Nätt, E. M. (2017). Webutvikling. Gyldendal. <br>
+                            -Forelesningsnotater
+                            
+                        </p>
+
+                    <button class="btn" id="print">Skriv ut</button>
+
+            </article>
+        </main>
+
+        <footer tabindex="20" id="footer">
+            <!--Footereren på nettsiden med kontaktinfo-->
+            2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a>
+            <br>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

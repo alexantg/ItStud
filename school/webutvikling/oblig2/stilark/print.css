@@ -1,0 +1,60 @@
+
+    body{
+        font-family: serif;
+    }
+
+    header{ /*fjerner navigasjonen*/
+
+        display: none;
+
+    }
+    
+    .btn{  /*fjerner knapper (andre enn i html-skjemaet) */
+
+        display: none;
+
+    }
+
+    p{ /*unngår sideskift inne i en p-tagg*/
+        page-break-inside: avoid;
+    }
+
+    h1{ /*anngir størrelse og setter overskrift center*/
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .dato{ /*gir datoen fet skrift*/
+
+        font-weight: bold;
+    }
+
+    .bildeArtikkel{ /*setter høyde og bredde på bildene i artiklene*/
+        height: 9rem;
+        width: 15rem;
+    }
+
+    figure{ /*sentrerer bildene (med bildetekst)*/
+        text-align: center;
+    }
+
+    hr{ /*fjerner horisontale streker*/
+        display: none;
+    }
+
+    footer{ /*skjuler footeren*/
+        display: none;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+

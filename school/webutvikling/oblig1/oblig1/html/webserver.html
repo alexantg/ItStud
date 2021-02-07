@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 4</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../stilark/stilark.css"> <!--Stilark nettsted-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css"> <!--Stilark ved utskrift-->
+    <script src="../script/script.js"> </script> <!--Linker til scriptet som brukes på siden-->
+
+
+</head>
+
+<body class="oppgaveside">
+
+<header>
+        <nav id="menyen">
+               
+            <br>
+                <h2>Oppgave 4</h2> <!--Setter overskrift i headeren-->
+            <br>
+                <ul> <!--Lager en meny i headeren-->
+    
+                    <li><a href="../index.html">Hovedside</a> </li>
+                    <li><a href="artikkel.html">Oppgave 2 </a> </li>
+                    <li><a href="innhold-vs-design.html">Oppgave 3</a> </li>
+                    <li><a href="semantikk.html">Oppgave 5</a> </li>
+                    <li><a href="../stilark/stilark.css">Oppgave 6</a> </li>
+                    <li><a href="box-modellen.html">Oppgave 7</a> </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+         
+        <main>
+
+           <article> <!--Hoveddelen av artikkelen ligger her-->
+
+            <h1>Webserver</h1> 
+             <br>
+             <p class="artikkelDato">28.08.2019</p> 
+           
+             <br>
+             <br>
+
+            <p>
+                En webserver er i all hovedsak en host for ulike
+                nettsteder. Webserveren utleverer  filer til en bruker ved forespørsel. 
+                Når brukeren vil ha tilgang til en nettside blir en forespørsel sendt 
+                gjennom fra nettleseren til den webserveren som håndterer filene til 
+                det spesifikke nettstedet. 
+                <br>
+                <br>
+                Et nettsted har et domene, som for eksempel
+                "hiof.no". Dette domene representerer en IP-adresse, som er den IP-en 
+                som blir brukt når nettleseren vil ha tilgang til et spesifikt nettsted. 
+                Domener blir lest og linket til en spesifikk IP-adresse gjennom en
+                DNS-server. Nettleseren og webserveren komuniserer dermed på denne IP-adressen, 
+                og nettleseren forespør filene for det spesifikke nettstedet. Websereveren sender Html
+                filen tilbake som nettleseren omgjør til en lesbar side. 
+
+                <br>
+                <br>
+                Webserevere kan være flere ulike ting, både programvare og maskin vare. Ganske vanlig
+                er det at webservere er maskinvare i form av en pc kjører programvare øremerket for 
+                lagring og distrubuering av filer.
+                Det finnes også dedikert programvare som fungerer som 
+                en webserver. Et kjent eksempel på dette er Apache. Dette 
+                programmet brukes av mange når de skal hoste nettsider på private PC-er. <br>
+                Nettbaserte skytjenester, slik som google disk, OneDrive og liknende er også en 
+                form for Webservere. 
+
+                <br>
+                <br>
+                En maskin som kjører webserver programvare, trenger heller ikke og bare være forbeholdt 
+                webserver tjenester. En maskin kan for eksempel også host epost servere. Alle maskiner som 
+                fungerer som webservere, og eventuelt andre servere offentliggjør funksjonalitetet til brukere
+                gjennom så kalte porter. En webserver er ofte for eksempel tilgjengelig for klient-maskiner
+                gjennom port 80. 
+                
+           </p>
+
+
+           <button class="btn" onclick="skrivUt()">Skriv ut</button> <!--Knapp for å skrive ut artikkelen-->           
+
+          <p class="kilder">Kilder: <br> <!--Liste over kilder-->
+          <a href="https://proffhosting.no/knowledgebase/10109/Hva-er-en-web-server.html" target="()">
+            https://proffhosting.no/knowledgebase/10109/Hva-er-en-web-server.html</a>  <br> <br>
+
+          <a href=" https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server" target="()">
+            https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server</a> <br>
+
+          <a href="https://computer.howstuffworks.com/web-server1.htm" target="()">
+                https://computer.howstuffworks.com/web-server1.htm</a> </p>
+
+
+           </article>
+
+           <aside> <!--Aside-taggen hvor bilde(ene) til artikkelen ligger-->
+                 <figure>
+                 <img src="../bilder/foerste_webserver.jpg">
+                 <figcaption>Verdens første webserver</figcaption>
+                   </figure>
+                   
+                    <figure>
+                    <img src="../bilder/storskala_webserver.jpg">
+                    <figcaption>Storskala webserver</figcaption>
+                    
+                    </figure>
+             </aside>
+
+
+             <footer id="footer"> <!--Footeren på nettsiden-->
+              2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a> <br>
+                    
+            <a href="https://www.facebook.com/alexander.gilstedt"> <!--Linker til sosiale medier-->
+            <img class="logo" alt="logo" src="../bilder/fb_logo.png">
+             </a>                
+            <a href="https://www.instagram.com/alexander00_35/"> <!--Linker til sosiale medier-->
+            <img class="logo" alt="logo" src="../bilder/ig_logo.jpg">
+            </a>      
+            </footer>
+
+           </main>
+      
+           
+
+                
+          
+        
+</body>
+</html>

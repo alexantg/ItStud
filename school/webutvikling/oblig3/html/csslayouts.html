@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>CSS Layouts</title>
+    <link rel="stylesheet" type="text/css" href="../stilark/stilark.css">
+    <!--Linker til stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <!--Linker til print stilark-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/normalize.css">
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css">
+    <!--Linker til print stilark-->
+    <script src="../script/print.js"> </script>
+
+
+</head>
+
+
+<body>
+
+    <div class="wrapperArtikkel">
+
+        <header>
+
+            <h2>Ressursside webutvikling</h2>
+            <!--Setter overskrift i headeren-->
+
+            <nav id="menyen">
+
+
+                <ul>
+                    <!--Lager en meny i headeren-->
+
+                    <li><a href="../index.html">Hjem</a> </li>
+                    <li><a href="../html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li><a href="../html/medietyper.html">Mediatyper</a> </li>
+                    <li><a href="../html/csslayouts.html">CSS layouts</a> </li>
+                    <li><a href="../html/video_audio.html">Video & Audio</a> </li>
+                    <li><a href="../html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li><a href="../html/sass_css.html">SASS</a> </li>
+                </ul>
+            </nav>
+
+            <hr>
+
+        </header>
+
+        <main>
+
+            <article>
+                <!--Angir artikkelen hvor hovedtekst er-->
+
+                <h1>Layouts i CSS </h1>
+
+
+                <p class="dato">22.09.2019 </p>
+                <!--Setter dato i artikkelen-->
+
+                <!--P-tagger for info-->
+
+                <p class="info">
+
+                    I webdesign og webutvikling er det kritisk at vi på en god måte kan organisere de ulike elementene en side består av.
+                    Tar vi for eksempel denne siden, som består av en header, en hovedtekst og bilder er det viktig å kunne plassere disse
+                    hensiktsmessig i forhold til hverandre. For å kunne gjøre dette tar man i bruk CSS. Å skape en slik lauout har tidligere blit løst på mange
+                    måter, denne artikkelen tar for seg de mer og mer gjeldende løsningene: flexbox og grid, samt beskriver noen av de tidligere
+                    måtene å skape struktur på.
+
+                </p>
+
+                <p class="info">
+
+                    Den første metoden for layout i CSS, er en som kalles flexbox. Denne metoden er forøvrig brukt på denne siden,
+                    i artikkel-ordningen på hjemmesiden, og for å ornde menyelemente så dette kan brukes som eksempelkode ved en senere
+                    annledning. Flexbox tar utgangspunkt i en container, det vil si et element som holder på en rekke andre elementer
+                    som skal bli organisert etter ulike flex-prinsipper. Dette kan illustreres slik som på bildet under. Her har vi en
+                    container, dette kan eksempelvis være en div.
+
+                </p>
+
+                <figure>
+                    <img class="bildeArtikkel" alt="flexLayout" src="../bilder/flexLayout.PNG">
+                </figure>
+
+                <p class="info">
+                    I CSS spesifiserer vi at en container skal vise elementene etter flex-prinsipper ved å gi den "display: flex;"
+                    Alle elementene vil da organisere etter egenskapene vi anngir. Elementene kan enten organiseres i rader, eller kolonner.
+                    Dette spesifiseres i CSS- egenskapene til containeren. Man bruker "flex-direction: row", og "flex-direction: column". Dette
+                    forteller altså at ved bruk av flexbox kan vi organisere elementene enten horisontalt eller vertikalt. Flexbox er altså en layout i en dimensjon.
+                    For å skape det oppsettet av elementer vi vil ha innad i containeren kan vi gi containeren noen egenskaper i CSS.
+                    Vi bruker "justify-content: ". Gjennom denne kan vi for ekspempel flytte elementene til midten av containeren, plassere de helt til venstre
+                    eller på toppen hvis de er organisert i rader. Vi kan også sette slik at de fordeler seg med lik avstand til hverandre. På bildene nedenfor
+                    finns forøvrig et eksempel på en av disse måtene å ogranisere flex-elementene på.
+                </p>
+
+                <figure>
+                    <img class="bildeArtikkel" alt="center" src="../bilder/jsSpace.PNG">
+                    <figcaption>Justify-content: space between</figcaption>
+                </figure>
+
+                <p class="info">
+                    Et annet viktig poeng med CSS flexbox er at vi kan gi flex-elementene en variabel bredde, eller høyde avhengig
+                    om de er organisert i rader eller kolonner. Da gir vi elementene enten egenskapen flex-grow, eller flex shrink.
+                    Disse egenskapene får elementene til å vokse eller minke i forhold til de andre elementene i containeren. Dette
+                    gjøres ved å sette en faktor som anngir hvordan elementene skal vokse.
+                </p>
+
+                <p class="info">
+                    Den neste akutelle måten som brukes for og oppnå struktur i CSS på, er noe som kalles CSS grid. Dette er enda ikke
+                    en veldig utbredt metode å bruke, men blir mer og mer aktuell. På samme måte som med CSS, flexbox bruker vi en container
+                    som inneholder de elementene som skal organiseres etter grid-egenskaper. Igjen, som med flexbox på vi i CSS bruke "display"
+                    på containeren, men her sette den til "display: grid". Alle HTML-elementene vil dermed organisere seg etter grid-egenskapene vi definerer videre. Før denne artikkelen går videre inn på hovrdan CSS grid fungerer, vil det være passende å skille mellom flex
+                    og grid. I korte trek er som nevnt flexbox en en-dimensjonal layout, der elementene enten kan organiseres i rader eller kolonner.
+                    Grid, på sin side er derimot et to-dimensjonalt system. Forskjellen er at flexbox stort sett egner seg for å sortere
+                    elementer i en rad, eller en kolonne. Slik som for eksempel menyen her, eller opplistingen av artikler på forsiden. Grid
+                    passer derimot godt for å organisere elementer i flere rader og kolonner samtidig, derav en todimensjonal layout.
+                </p>
+
+                <figure>
+                    <img class="bildeArtikkel" alt="center" src="../bilder/gridVSflex.jpg">
+                    <figcaption>Grid vs flexbox illustrert</figcaption>
+                </figure>
+
+                <p class="info">
+                    For å organisere elementene slik vi vil innenfor containeren er det en del egenskaper vi kan definere. I bunn og grunn
+                    er en grid-layout ett rutenett som vi kan fylle med innhold. For å definere disse radene og kolonnene kan vi bruke noe
+                    som heter "grid-template-columns" og "grid-template-rows". Med disse egenskapene definerer vi hvor mange rader og kolonner vi skal ha, samt hvor store disse
+                    skal være. Mellomrommet mellom disse radene og kolonnene kan vi bestemme med "grid-gap" og her spesifisere avstand mellom de ulike rutene i rutenettet-
+                </p>
+
+                <p class="info">
+                    Som vi så med flexbox kunne vi bruke "justify items" for å spesifisere hvordan de ulike elementene skulle opptre
+                    innenfor containeren. Med CSS grid kan vi få til samme funksjonalitet, men her spesifiserer vi altså hvordan vi vil
+                    elementene skal opptre innenfor hver celle i "rutenettet". Til dette bruker vi egenskapen "justify-items". Disse kan spesifiseres
+                    til center, start, stretch etc. Eksempelvis elementene sentreres i cellen hvis vi bruker "center". Videre kan vi bruke
+                    egenkapen "allign content" til å spesifisere hvordan selve cellen skal flyte inne i containeren. Denne tar imot mange av de
+                    samme verdiene som "justify- items". Det er viktig å merke seg at "float" ikke fungerer på elementene i en grid-layout.
+                </p>
+
+                <p class="info">
+                    Vi kan også sette en rekke egenskaper på selve grid-elementet. Det kan spesifiseres hvilken kolonne de ulike elemtentene skal
+                    fylle. Eller rettere sagt hvor ulike items skal opptre i rutenettet. Dette gjøres gjennom "grid-row start/end" og
+                    "grid-column-start/end". Vi for eksempel sette at et element skal opptre fra kolonne 1 til 2, og fra rad 1 til 4. Vi kan også
+                    forhåndsdefinere "grid-template areas" som sier at det er her vi vi vil plassere items. Vi definerer disse områdene i container-CSSen
+                    og fyller de ulike områdene i CSSen til hvert enkelt. Vi sier at element skal fylle det forhåndsdefinerte
+                    området ved å bruke "grid-area" på det akutelle elementet. En slik løsning er forøvrig brukt på layouten av dette nettstedet, så dette
+                    kan brukes som eksempel.
+                </p>
+
+                <p class="info">
+                    Før CSS flexbox og grid ble tatt i bruk, og ble standard var det veldig vanlig å løse slike layout- utfordringer
+                    med flittig bruk av egenskapen "float". Innholdet ble organisert i ulike div-er slik at disse kunne ekseplevis flyte til
+                    høyre eller venstre avhengig av hvor man ville ha innholdet. For å skape avstand mellom disse kunne man for eksempel bruke
+                    "margin". Å hele tiden måtte bruke float, og kombinere dette med margins blir ofte mye og uoversiktlig kode. CSS grid og flexbox
+                    er derfor mye mer effektive løsninger for å oppnå ønskelig layout.
+                </p>
+
+                <p class="info">
+                    Det finnes også en rekke rammeverk, altså forhåndsdefinerte løsninger for layout i CSS. Eksempler på dette er Bootstrap og Foundtation.
+                    Disse gir deg mengder med ferdiglaget CSS. Dette er løsninger som fortsatt brukes flittig idag, men kan også regnes som "eldre" metoder
+                    for og oppnå struktur. Dette fordi de ble brukt før CSS grid og flexbox ble vanlig. En klar fordel med bruk av rammeverk er at det gir deg
+                    mye utgangspunkt, og man kan lettere komme i gang annet design. Det er viktig å merke seg at rammeverk ikke alltid benytter den nyeste teknologien
+                    for struktur, og er derfor en "eldre" metode.
+                </p>
+
+                <h3>Eksterne kilder</h3>
+                <p class="kilder">
+                    -<a href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a>
+                    <br>
+                    -<a href="https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412">https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412</a>
+                    <br>
+                    <a href="https://www.w3schools.com/css/css3_flexbox.asp">https://www.w3schools.com/css/css3_flexbox.asp</a>
+                </p>
+
+                <button class="btn" id="print">Skriv ut</button>
+
+
+            </article>
+
+        </main>
+
+        <footer id="footer">
+            <!--Footereren på nettsiden med kontaktinfo-->
+
+            2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a> <br>
+
+        </footer>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

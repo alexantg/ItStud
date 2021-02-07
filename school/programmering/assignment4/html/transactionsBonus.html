@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    </title></title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <script src="../script/scriptBonus.js"></script>
+
+    </head>
+
+<body>
+
+        
+
+    <main>
+
+            <a class="btn" href="../index.html">Home</a>
+
+        <center><h1>Trancaction program</h1> </center>
+        <center><p class="info">//please upload file before choosing type or location</p></center>
+        
+       
+        <div id="fileUpload">
+
+            <input type="file" accept=".csv" id="file">
+
+        </div>
+
+        <br>
+
+        <div id="radio">
+        <label>Trancaction type <input id="type" type="radio" name="choose"></label>
+        <label>Trancaction location <input id="location" type="radio" name="choose"></label>
+        </div>
+       
+        <br>
+        
+        <div id="choose">
+            <select hidden id="select">
+              
+            </select>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="wrapper">
+
+        <div id="tableDiv">
+
+        <table id="table">
+
+        </table>
+
+        <br>
+
+        <table hidden id="table2">
+
+    
+                </table>
+
+        </div>
+
+      
+        <div id="canvas">
+
+          <center> <h3 id="heading" hidden>Graphical representation of total amounts</h3></center> 
+
+         <canvas width="550" height="550" id="drawing">
+                
+        </canvas>
+
+        </div>
+
+       
+
+        </div>
+           
+       
+
+
+    </main>
+
+  
+
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+/*My main Css file: stilark.scss*/
+
+@import 'reset'; 
+@import 'variables';
+
+
+body{
+    background: $light-grey;
+}
+
+.center-block{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header{
+    width: $fullwidth;
+    background: $dark-grey;
+    color: $white;
+    @extend .center-block;
+
+}
+
+
+main{
+    width: $max-width;
+    @extend .center-block;
+    background: white;
+    border: 5px solid $middle-grey; 
+
+}

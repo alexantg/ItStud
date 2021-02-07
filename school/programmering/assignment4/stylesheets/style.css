@@ -1,0 +1,109 @@
+
+
+    body{
+
+    background-color: white ;
+
+        }
+
+    h2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    color: black;
+    }
+
+    h1{
+        color: black;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        
+    }
+
+
+    footer{ 
+
+        margin-top: 20rem;
+        
+    
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #flexContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+  
+    table, th, td{
+        border: 1px solid black;
+    
+    }
+
+    th, td{
+        padding: 5px;
+    }
+
+    .divTasks{
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    .btn {
+        background-color:black;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 20px;
+                   }
+               
+
+
+.div{
+    border: 2px solid lightgrey;
+    text-align: center;
+    padding: 4rem;
+    margin-top: 3rem;
+}
+
+.picture{
+    width: 70rem;
+    height: 50rem;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ #drawing{
+    margin-top: 0;
+} 
+
+#table2{
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+   
+
+table, tr, td{
+
+    padding: 8px;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    
+
+}
+
+table tr:nth-child(even){background-color: #90ee90 }
+    
+
+    

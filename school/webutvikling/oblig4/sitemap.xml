@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/index.html</loc>
+  <lastmod>2019-11-04T11:51:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/htmlskjema.html</loc>
+  <lastmod>2019-10-31T14:42:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/medietyper.html</loc>
+  <lastmod>2019-10-31T14:42:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/csslayouts.html</loc>
+  <lastmod>2019-10-31T14:42:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/video_audio.html</loc>
+  <lastmod>2019-10-31T14:42:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/responsivtDesign.html</loc>
+  <lastmod>2019-10-31T14:42:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/sass_css.html</loc>
+  <lastmod>2019-10-31T14:42:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/seo.html</loc>
+  <lastmod>2019-11-03T19:27:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/tilgjengelighet.html</loc>
+  <lastmod>2019-11-01T09:14:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/sosialeMedier.html</loc>
+  <lastmod>2019-11-04T11:49:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/html/microdata.html</loc>
+  <lastmod>2019-11-04T11:13:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/person.html</loc>
+  <lastmod>2019-11-03T21:13:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/arrangement.html</loc>
+  <lastmod>2019-11-04T10:57:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/?C=N;O=D</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/?C=M;O=A</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/?C=S;O=A</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/?C=D;O=A</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/</loc>
+  <lastmod>2019-11-04T11:51:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/?C=N;O=A</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/?C=M;O=D</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/?C=S;O=D</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://itstud.hiof.no/~alexantg/webutvikling/oblig4/microdata/?C=D;O=D</loc>
+  <lastmod>2019-11-04T12:13:42+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>

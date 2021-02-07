@@ -1,0 +1,45 @@
+@media print{ /*anngir at stilen gjelder for utskrift*/
+
+   
+
+    #menyen{ /*tar bort menyen*/
+        display: none;
+    }
+    
+    .btn{ /*tar bort knapper*/
+        display: none;
+    }
+
+    article{ /*setter egenskaper på article*/
+        width: 50%;
+        float: left;
+        margin-left: 10%;
+    }
+
+    img{ /*setter egenskaper til bildet*/
+        width: 30%;
+        float: right;
+        padding-top: 30%;
+        
+    }
+    
+    figcaption{ /*setter egenskaper på bildebeskrivelse*/
+        float: right;
+        margin-right: 7%;
+        margin-top: 2%;
+    }
+
+
+    footer{ /*setter egenskaper på footer*/
+    clear: both;
+    position: relative;
+    margin-top: -200px;
+    padding-top: 50px;
+    margin-left: 200px;
+    }
+
+  .logo{ /*tar bort logoen*/
+      display: none;
+  }
+
+}

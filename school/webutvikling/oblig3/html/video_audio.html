@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mediatyper</title>
+    <link rel="stylesheet" type="text/css" href="../stilark/stilark.css">
+    <!--Linker til stilark-->
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <!--Google font-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/normalize.css">
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css">
+    <!--Linker til print stilark-->
+    <script src="../script/print.js"> </script>
+    <!--Linker til scriptet på siden-->
+
+</head>
+
+
+<body>
+
+    <div class="wrapperArtikkel">
+
+        <header>
+
+            <h2>Ressursside webutvikling</h2>
+            <!--Setter overskrift i headeren-->
+
+            <nav id="menyen">
+                <ul>
+                    <!--Lager en meny i headeren-->
+
+                    <li><a href="../index.html">Hjem</a> </li>
+                    <li><a href="../html/htmlskjema.html">HTML-skjemaer</a> </li>
+                    <li><a href="../html/medietyper.html">Mediatyper</a> </li>
+                    <li><a href="../html/csslayouts.html">CSS layouts</a> </li>
+                    <li><a href="../html/video_audio.html">Video & Audio</a> </li>
+                    <li><a href="../html/responsivtDesign.html">Responsivt design</a> </li>
+                    <li><a href="../html/sass_css.html">SASS</a> </li>
+
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+
+
+        <main>
+
+
+
+            <article>
+                <!--Angir artikkelen hvor hovedtekst er-->
+
+                <h1>Video og Audio i HTML 5</h1>
+
+                <p class="dato">22.10.2019</p>
+                <!--Setter dato i artikkelen-->
+
+                <p class="info">
+                    Denne artikkelen vil beskrive hvordan video og audio fungerer i HTML 5. Den vil ta for seg hvilke muligheter vi har for videoavspilling
+                    vi har, nettleserstøtte og liknende. Det samme med lydavspilling på en nettside.
+
+                </p>
+
+                <p class="info">
+                    HTML 5 introduserte taggene &lt; audio &gt; og &lt; video &gt;. Disse gjorde det mye lettere å sette inn medieinnhold på en nettside.
+                    Begge taggene gir en "default" avspillinkontroller slik at brukeren kan styre lyden eller videoen. I disse taggene kan vi sette en rekke
+                    atributter slik som controls, som gir muligheter til å stoppe og starte videoen etc. Autoplay, dersom vi ønsker at videoen eller lydfilen 
+                    skal starte automatisk når nettsiden er lastet. Vi har også loop, som gjør at den spilles av på nytt automatisk når første avspilling er slutt.
+                    Disse atributtene gjelder forsåvidt både for video og audio.
+                </p>
+
+                <p class="info">
+                    For å spille av video i HTML 5, har 5 muligheter for å oppnå dette. En av de er video-taggen som er omtalt ovenfor. En annen er flashplayer, en annen er 
+                    en embedded video gjerne da med bruk av iframes. Videre kan vi inkludere en link til en fil/nedlasting. Og til slutt har vi en proprietær videoavspiller. 
+                    Det finnes en rekke filformater, men de største er "WebM" , "mp4" og "ogg/ogv". Det filformatet med klart størst nettleserstøtte er mp4, og er det
+                    som burde velges skal man være sikker på at videoen støttes. Det er også verdt og nevne at video-taggen kan holde på flere source-atributter. 
+                    Det vil si at du kan inkludere flere filtyper i samme video-tagg, og nettleseren kan dermed velge og benyttet det formatet på videoen den 
+                    støtter/ foretrekker. Selve avspillingsvinduet rendres forskjellig i ulike nettlesere, og det er i bunn og grunn de som bestemmer utseende.
+                </p>
+
+                <p class="info">
+                    På samme måte har vi 5 muligheter for å spille av lyd i HTML 5. Disse er en proprietær avspiller, en embedded lydfil, en flashplayer, en link til nedlasting
+                    og sist men ikke minst audio-taggen som er nevnt ovenfor. De tre største filformatene er Mp3, Wav og Ogg. Det er klart mp3 som er best støttet i 
+                    ulike nettlesere. Også her kan vi ha flere formater i samme tagg, slik at nettleseren kan spille av den som er støttet. På samme måte som med video
+                    er det ulikt hvordan nettlesere rendrer utseende på avspillings-kontrollene. 
+
+                </p>
+
+                <p class="info">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OOy764mDtiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                </p>
+
+                <h3>Kilder</h3>
+                <p class="kilder">
+                    - Duckett, J. (2011). HTML & CSS Design and build Websites. John Willey & Sons, inc. <br>
+                    - Tom Heine Nätt, E. M. (2017). Webutvikling. Gyldendal. <br>
+                    -Forelesningsnotater
+                    
+                </p>
+
+                <button class="btn" id="print">Skriv ut</button>
+
+          
+
+
+
+            </article>
+        </main>
+
+
+
+        <footer id="footer">
+            <!--Footereren på nettsiden med kontaktinfo-->
+            2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a> <br>
+
+        </footer>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 5</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../stilark/stilark.css"> <!--Linker til stilark-->
+    <link rel="stylesheet" type="text/css" media="print" href="../stilark/print.css"> <!--Linker til print-stil-->
+    <script src="../script/script.js"> </script> <!--Linker til script-->
+
+
+</head>
+
+<body class="oppgaveside">
+<header>
+        <nav id="menyen"> <!--Navigasjonsdelen på siden-->
+               
+            <br>
+                <h2>Oppgave 5</h2> <!--Setter overskrift i headeren-->
+            <br>
+                <ul> <!--Lager en meny i headeren-->
+    
+                    <li><a href="../index.html">Hovedside</a> </li>
+                    <li><a href="artikkel.html">Oppgave 2</a> </li>
+                    <li><a href="innhold-vs-design.html">Oppgave 3</a> </li>
+                    <li><a href="webserver.html">Oppgave 4</a> </li>
+                    <li><a href="../stilark/stilark.css">Oppgave 6</a> </li>
+                    <li><a href="box-modellen.html">Oppgave 7</a> </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+            <main> 
+
+           <article> <!--Hoveddelen av artikkelen ligger her--> 
+
+            <h1>Semantikk</h1> 
+             <br>
+             <p>29.08.2019</p> 
+
+            <br>
+            <br>
+
+            <p> Html 5 introduserte noe som kalles semantiske tagger. 
+                 De semantiske/strukturelle taggene er hovedsakelig:
+                 main, nav, footer og article. Taggene er hovedsakelig 
+                 ment for å strukturere/bygge opp nettsiden, og gjøre 
+                 det lett å kjenne igjen de ulike delene av nettsiden.
+                 En typisk oppbygging av en nettside ved hjelp av 
+                 semantiske tagger er illustrert på bildet til høyre. 
+                 
+                <br>
+                <br>
+                 Den klare fordelen med å bruke semantiske tagger i 
+                 forhold til den gamle løsningen er at det er mye 
+                 lettere for maskiner å fortså oppbyggingen av en
+                 nettside. Når vi forteller en nettleseren hvilken 
+                 del av nettsiden som er hva vil den kunne tilpasse
+                 brukeropplevelsen etter hvordan nettsiden er bygd
+                 opp. Nettleseren vil med andre ord kunne fortså 
+                 hva som er header, footer, meny og hovedinnhold
+                 når den leser koden som skal vises. 
+                <br>
+                <br>
+                Før de semantiske taggene ble introdusert måtte man
+                ofte bruke div-taggen for å organisere elementer på 
+                nettsiden. For å style disse brukes ofte aktivt 
+                classes og id-er. I motsetning, representrer de 
+                semantiske delene av siden egne områder som ofte
+                skal styles. Det vil si at man kan droppe denne bruken
+                av classes og id-er, når det ofte er slik at man vil 
+                at en spesifikk del av nettsiden skal bli representert
+                på en spesifikk måte. 
+                <br>
+                <br>
+                De aller viktigste semantiske taggene fremgår også av 
+                bildet til høyre, og er blant annet &lt;main&gt;, &lt;article&gt;, &lt;header&gt;, 
+                &lt;section&gt; og &lt;aside&gt;.  &lt;main&gt;- taggen brukes hovedsakelig 
+                for å markere hva som er hovedinnholder på siden. Eksempelvis ville dette
+                vært teksten og bildet på denne siden. &lt;Section&gt;- taggen brukes ofte rundt
+                deler av et nettsted som hører sammen. &lt;aside&gt; brukes hovedsakelig om ting 
+                som ligger ved siden av hovedinnholdet på nettsiden, slik som for eksempel bilde 
+                på denne siden. Det er også ofte slik at innholdet i aside skal ha en eller 
+                annen relasjon til hovedinnholdet. 
+                <br>
+                <br>
+                &lt;nav&gt;- taggen brukes i all hovedsak på de delen av nettsiden som omfatter
+                navigasjon. Eksempelvis menyen på denne siden. På det nederste bildet til høyre,
+                er det listet opp flere av de viktige semantiske-taggene.
+
+           </p>
+
+
+           <button class="btn" onclick="skrivUt()">Skriv ut</button> <!--Knapp som kjører utskrift-->
+
+           <p class="kilder"> <!--Kildelisten-->
+
+            Kildeliste: <br>
+
+            -Nes, A. (u.d.). Semantiske tagger i HTML5. 
+             Hentet fra 
+             <a href="https://www.ntnu.no/iie/fag/html5/lek01/semantiske-elementer-html5.pdf">
+             https://www.ntnu.no/iie/fag/html5/lek01/semantiske-elementer-html5.pdf</a> 
+             <br>
+             <br>
+
+            -Tom Heine Nätt, E. M. (2017). Webutvikling. Halden: Gyldendal.
+                <br>
+                <br>
+
+            - Forelesning Webutvikling: Semantikk og struktur
+
+           </p>
+
+
+           </article>
+
+           
+           <aside> <!--Aside taggen hvor bildene ligger-->
+            <figure>
+             <img src="../bilder/semantiske_tagger.png">
+             <figcaption> Struktur</figcaption>
+             </figure>
+
+             <figure>
+                    <img src="../bilder/viktige_tagger.png">
+                    <figcaption> Viktige tagger</figcaption>
+             </figure>
+
+            </aside>
+
+
+
+            <footer id="footer"> <!--Footeren på nettsiden med kontaktinformasjon-->
+                    2019 | Alexander Gilstedt | <a href="mailto:alexantg@hiof.no">alexantg@hiof.no</a> <br>
+                            
+                    <a href="https://www.facebook.com/alexander.gilstedt">
+                    <img class="logo" alt="logo" src="../bilder/fb_logo.png">
+                     </a>                
+                    <a href="https://www.instagram.com/alexander00_35/">
+                    <img class="logo" alt="logo" src="../bilder/ig_logo.jpg">
+                    </a>      
+             </footer>
+
+           
+
+           </main>
+
+           
+
+
+            
+            
+            
+
+
+</body>
+</html>

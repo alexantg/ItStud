@@ -1,0 +1,4 @@
+User-agent: *
+Dissallow: 
+
+sitemap: https://itstud.hiof.no/~alexantg/webutvikling/oblig4/sitemap.xml
